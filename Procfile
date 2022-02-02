@@ -1,1 +1,1 @@
-web: gunicorn crock-on.wsgi
+web: gunicorn crock_on.wsgi
