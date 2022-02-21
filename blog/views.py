@@ -5,6 +5,16 @@ from .forms import CommentForm
 from django.http import HttpResponseRedirect
 
 
+def search_recipes(request):
+    if request.method == "POST":
+        searched = request.POST['searched']
+        recipes = Post.objects.filter(title__contains=searched)
+        return render(request, 'search_recipes.html', 
+        {'searched' :searched,
+        'recipes' :recipes})
+    else:
+        return render(request, 'search_recipes.html', {})
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")

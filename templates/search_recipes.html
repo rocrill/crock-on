@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <center>
+    {% if searched %}    
+        <h1>You searched for {{ searched }}</h1>
+        <br/>
+        {% for post in recipes %}
+            {{ post }} - {{ post.web }}<br/>
+        {% endfor %}
+    {% else %}
+        <h1>Oops, you forgot to search for a recipe!</h1>
+    {% endif %}
+    </center>
+
+{% endblock %}
