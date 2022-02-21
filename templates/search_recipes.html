@@ -7,7 +7,7 @@
         <h1>You searched for {{ searched }}</h1>
         <br/>
         {% for post in recipes %}
-            {{ post }} - {{ post.web }}<br/>
+            {% include 'postlisttemplate.html' %}<br/>
         {% endfor %}
     {% else %}
         <h1>Oops, you forgot to search for a recipe!</h1>
