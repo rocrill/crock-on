@@ -11,7 +11,13 @@ class PostList(generic.ListView):
     template_name = "index.html"
     paginate_by = 6
 
-
+# class RandomPostList(generic.ListView):
+#     model = Post
+#     #queryset = Post.objects.filter(status=1).order_by("-created_on")
+#     queryset = Post.objects.all().order_by('?')
+#     template_name = "index.html"
+#     paginate_by = 6
+    
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):

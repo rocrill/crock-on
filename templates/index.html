@@ -56,7 +56,32 @@
     </nav>
     {% endif %}
 
+<h1>Random recipe of the day:</h1>   
 
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="image-container">
+                    {% if "placeholder" in post_list.0.featured_image.url %}
+                    <img class="card-img-top"
+                        src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+                    {% else %}
+                    <img class="card-img-top" src=" {{ post_list.0.featured_image.url }}">
+                    {% endif %}
+                    <div class="image-flash">
+                        <p class="author">Author: {{ post_list.0.author }}</p>
+                    </div>
+                </div>
+                <a href="{% url 'post_detail' post_list.0.slug %}" class="post-link">
+                    <h2 class="card-title">{{ post_list.0.title }}</h2>
+                    <p class="card-text">{{ post_list.0.excerpt }}</p>
+                </a>
+                <hr />
+                <p class="card-text text-muted h6">{{ post_list.0.created_on}} <i class="far fa-heart"></i>
+                    {{ post_list.0.number_of_likes }}</p>
+            </div>
+        </div>
+    </div>
 
 
 
