@@ -8,7 +8,7 @@ from django.http import HttpResponseRedirect
 def search_recipes(request):
     if request.method == "POST":
         searched = request.POST['searched']
-        recipes = Post.objects.filter(title__contains=searched)
+        recipes = Post.objects.filter(title__icontains=searched)
         return render(request, 'search_recipes.html', 
         {'searched' :searched,
         'recipes' :recipes})

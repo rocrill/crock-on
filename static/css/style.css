@@ -3,10 +3,10 @@ body {
 }
 
 .brand {
-    font-family: Lato, sans-serif;
+    font-family: 'Roboto Serif', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: black;
 }
 
 .red-o {
@@ -43,7 +43,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #006400;
 }
 
 .author {
@@ -88,7 +88,8 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    font-family: 'Roboto Serif', sans-serif;
+    color: black;
 }
 
 .post-link:hover,
