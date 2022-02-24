@@ -3,6 +3,8 @@ from django.views import generic, View
 from .models import Post
 from .forms import CommentForm
 from django.http import HttpResponseRedirect
+from django.utils.text import slugify
+
 
 
 def search_recipes(request):
@@ -103,5 +105,7 @@ class PostCreateView(generic.CreateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
-        return super().form_valid(form)
+        return super().form_valid(form) 
+
+    
 
