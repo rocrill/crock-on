@@ -2,16 +2,11 @@ body {
     background-color: #F9FAFC;
 }
 
-.brand {
+.logo {
     font-family: 'Roboto Serif', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: black;
-}
-
-.red-o {
-    color: #E84610;
-}
 
 .thin {
     font-weight: 300;
