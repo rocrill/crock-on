@@ -28,6 +28,7 @@ class PostList(generic.ListView):
 #     template_name = "index.html"
 #     paginate_by = 6
     
+
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
@@ -97,6 +98,10 @@ class PostLike(View):
 
 class PostCreateView(generic.CreateView):
     model = Post
-    fields = ['title', 'content']
+    fields = ['title', 'slug', 'content']
     template_name = "post_form.html"
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
 
