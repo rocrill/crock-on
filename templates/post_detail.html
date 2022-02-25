@@ -31,6 +31,9 @@
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
                 <p class="card-text ">
+                    <img src="{{ post.header_image.url }}">
+                    
+                    <br/><br/>
                     {{ post.content | safe }}
                 </p>
                 <div class="row">

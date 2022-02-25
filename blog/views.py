@@ -109,4 +109,5 @@ class PostCreateView(generic.CreateView):
 
         return render(request, 'upload.html', {'form': form})
 
+
 #form = UpdateDetailsForm(request.POST, request.FILES)
