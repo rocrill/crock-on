@@ -5,7 +5,7 @@
 {% block content %}
 
 <div class = "content_section">
-    <form method="POST">
+    <form method="POST" enctype="mulipart/form-data">
         {% csrf_token %}
         <fieldset class="form-group">
             <legend class="border-bottom mb-4">Blog Post</legend>

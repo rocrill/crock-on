@@ -100,12 +100,13 @@ class PostLike(View):
 
 class PostCreateView(generic.CreateView):
     model = Post
-    fields = ['title', 'slug', 'content']
+    fields = ['title', 'slug', 'content', 'header_image',]
     template_name = "post_form.html"
 
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form) 
 
-    
+        return render(request, 'upload.html', {'form': form})
 
+#form = UpdateDetailsForm(request.POST, request.FILES)
