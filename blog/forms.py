@@ -7,16 +7,16 @@ from django import forms
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'slug', 'author', 'content', 'header_image',)
+        fields = ('title', 'slug', 'author', 'featured_image', 'content')
 
-        widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control'}),
-            'slug':forms.TextInput(attrs={'class': 'form-control'}),
-            #'author': forms.TextInput(attrs={'class': 'form-control', 'value':''}),#, 'id':''}),
-            #'category': forms.Select(choices=choice_list, attrs={'class':'form-control'}.....)
-            'content': forms.Textarea(attrs={'class': 'form-control'}),
-            #'snippet': forms.Textarea(attrs={'class': 'form-control'}),
-        }
+        # widgets = {
+        #     'title': forms.TextInput(attrs={'class': 'form-control'}),
+        #     'slug':forms.TextInput(attrs={'class': 'form-control'}),
+        #     #'author': forms.TextInput(attrs={'class': 'form-control', 'value':''}),#, 'id':''}),
+        #     #'category': forms.Select(choices=choice_list, attrs={'class':'form-control'}.....)
+        #     'content': forms.Textarea(attrs={'class': 'form-control'}),
+        #     #'snippet': forms.Textarea(attrs={'class': 'form-control'}),
+        # }
 
 class CommentForm(forms.ModelForm):
     class Meta:

@@ -21,7 +21,7 @@
                                 <img class="card-img-top"
                                     src="static/images/carrot-soup.jpg">
                                 {% else %}
-                                <img class="card-img-top" src="{{ post.header_image.url }}">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
@@ -72,7 +72,7 @@
                             <img class="card-img-top"
                                 src="static/images/carrot-soup.jpg">
                             {% else %}
-                            <img class="card-img-top" src="{{ post.header_image.url }}">
+                            <img class="card-img-top" src=" {{ post.featured_image.url }}">
                             {% endif %}
                             <div class="image-flash">
                                 <p class="author">Author: {{ post.author }}</p>
@@ -125,7 +125,7 @@
                     <img class="card-img-top"
                         src="static/images/carrot-soup.jpg">
                     {% else %}
-                    <img class="card-img-top" src=" {{ post_list.0.featured_image.url }}">
+                    <img class="card-img-top" src=" {{ post.featured_image.url }}">
                     {% endif %}
                     <div class="image-flash">
                         <p class="author">Author: {{ post_list.0.author }}</p>

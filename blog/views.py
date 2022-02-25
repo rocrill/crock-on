@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, PostForm
 from django.http import HttpResponseRedirect
 from django.utils.text import slugify
 
@@ -16,6 +16,23 @@ def search_recipes(request):
         'recipes' :recipes})
     else:
         return render(request, 'search_recipes.html', {})
+
+def add_recipe(request):
+    form = None
+    if request.method == "POST":
+        form = PostForm(request.POST, request.FILES)
+        if form.is_valid():
+            # print(f'len of files={len(request.FILES)}')
+            # file = request.FILES['featured_image']
+
+            # upload_data = cloudinary.uploader.upload(file)
+            # print(f'upload_data={upload_data}')
+
+            form.save()
+            return HttpResponseRedirect('/success/')
+    else:
+        form = PostForm()
+    return render(request, 'post_form.html', {'form': form})
 
 class PostList(generic.ListView):
     model = Post
@@ -100,7 +117,7 @@ class PostLike(View):
 
 class PostCreateView(generic.CreateView):
     model = Post
-    fields = ['title', 'slug', 'content', 'header_image',]
+    fields = ['title', 'slug', 'content', 'header_image', 'featured_image']
     template_name = "post_form.html"
 
     def form_valid(self, form):
