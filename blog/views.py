@@ -146,8 +146,7 @@ class PostUpdateView(generic.UpdateView):
         return render(request, 'upload.html', {'form': form})
 
     def get_success_url(self):
-        #return reverse('lawyer_detail', kwargs={'lawyer_slug': self.object.lawyer_slug})
-        return reverse('success')
+        return reverse('update_success')
 
 
 class PostDeleteView(generic.DeleteView):

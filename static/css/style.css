@@ -7,6 +7,7 @@ body {
     font-size: 1.4rem;
     font-weight: 700;
     color: black;
+}    
 
 .thin {
     font-weight: 300;
@@ -30,7 +31,9 @@ body {
 }
 
 .card-body {
-background-color: red;
+   /* width: 80%;
+    height: 50%;*/
+
 }
 
 .image-container {

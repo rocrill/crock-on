@@ -9,14 +9,22 @@
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% if "/success/" == request.path %}
-                <div class="alert alert-success" role="alert">
-                    Thanks for submitting your recipe! This will be published as soon as we approve it :) 
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">Thanks for submitting your recipe! This will be published as soon as we approve it :)</a> 
                 </div>
+                {% elif "/update_success/" == request.path %}
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    Thanks for submitting your edit! Your recipe will be re-posted as soon as we approve the update :) 
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+
                 {% endif %}
                 {% for post in post_list %}
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
+                    <div class="card mb-4 col-sm-12 col-lg-6">
+                        <div class="card-body card h-100">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
