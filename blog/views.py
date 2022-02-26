@@ -4,6 +4,7 @@ from .models import Post
 from .forms import CommentForm, PostForm
 from django.http import HttpResponseRedirect
 from django.utils.text import slugify
+from django.urls import reverse_lazy
 
 
 
@@ -143,3 +144,11 @@ class PostUpdateView(generic.UpdateView):
     def get_success_url(self):
         #return reverse('lawyer_detail', kwargs={'lawyer_slug': self.object.lawyer_slug})
         return reverse('success')
+
+
+class PostDeleteView(generic.DeleteView):
+    model = Post
+    template_name = "delete_post.html"
+    fields = ['title', 'slug', 'content', 'featured_image']
+    success_url = reverse_lazy('home')
+  

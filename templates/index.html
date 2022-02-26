@@ -27,7 +27,10 @@
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
                                     {% if user == post.author %}
-                                    <a href="{% url 'post-update' post.slug %}">Edit</a>
+                                    <small>
+                                        <a href="{% url 'post-update' post.slug %}">Edit</a>
+                                        <a href="{% url 'post-delete' post.slug %}">Delete</a>
+                                    </small>
                                     {% endif %}
                                 </div>
                             </div>
