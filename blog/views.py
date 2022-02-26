@@ -128,3 +128,18 @@ class PostCreateView(generic.CreateView):
 
 
 #form = UpdateDetailsForm(request.POST, request.FILES)
+
+class PostUpdateView(generic.UpdateView):
+    model = Post
+    template_name = "update_post.html"
+    fields = ['title', 'slug', 'content', 'featured_image']
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form) 
+
+        return render(request, 'upload.html', {'form': form})
+
+    def get_success_url(self):
+        #return reverse('lawyer_detail', kwargs={'lawyer_slug': self.object.lawyer_slug})
+        return reverse('success')

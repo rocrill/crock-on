@@ -29,6 +29,10 @@ body {
     background-color: transparent;
 }
 
+.card-body {
+background-color: red;
+}
+
 .image-container {
     position: relative;
 }
