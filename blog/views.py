@@ -5,13 +5,17 @@ from .forms import CommentForm, PostForm
 from django.http import HttpResponseRedirect
 from django.utils.text import slugify
 from django.urls import reverse_lazy
+from django.db.models import Q
 
 
 
 def search_recipes(request):
     if request.method == "POST":
         searched = request.POST['searched']
-        recipes = Post.objects.filter(title__icontains=searched)
+       # recipes = Post.objects.filter(title__icontains=searched)
+        recipes = Post.objects.filter(
+            Q(content__icontains=searched) | Q(title__icontains=searched))
+
         return render(request, 'search_recipes.html', 
         {'searched' :searched,
         'recipes' :recipes})
