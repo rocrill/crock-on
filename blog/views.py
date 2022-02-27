@@ -26,6 +26,7 @@ def add_recipe(request):
     form = None
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES)
+        form.instance.author = request.user
         if form.is_valid():
             # print(f'len of files={len(request.FILES)}')
             # file = request.FILES['featured_image']
@@ -120,19 +121,21 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args =[slug]))
 
 
-class PostCreateView(generic.CreateView):
-    model = Post
-    fields = ['title', 'slug', 'content', 'header_image', 'featured_image']
-    template_name = "post_form.html"
+# class PostCreateView(generic.CreateView):
+#     model = Post
+#     fields = ['title', 'slug', 'content', 'header_image', 'featured_image']
+#     template_name = "post_form.html"
 
-    def form_valid(self, form):
-        form.instance.author = self.request.user
-        return super().form_valid(form) 
+#     def form_valid(self, form):
+#         form.instance.author = self.request.user
+#         #your_object.user = request.user
+#         return super().form_valid(form) 
 
-        return render(request, 'upload.html', {'form': form})
+#         return render(request, 'upload.html', {'form': form})
+
+      
 
 
-#form = UpdateDetailsForm(request.POST, request.FILES)
 
 class PostUpdateView(generic.UpdateView):
     model = Post
@@ -153,5 +156,8 @@ class PostDeleteView(generic.DeleteView):
     model = Post
     template_name = "delete_post.html"
     fields = ['title', 'slug', 'content', 'featured_image']
-    success_url = reverse_lazy('home')
+    #success_url = reverse_lazy('home')
+    
+    def get_success_url(self):
+        return reverse('delete_success')
   

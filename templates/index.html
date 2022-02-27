@@ -9,17 +9,17 @@
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% if "/success/" == request.path %}
-                <div class="alert alert-success alert-dismissible" role="alert">
-                    <a href="#" class="close" data-dismiss="alert" aria-label="close">Thanks for submitting your recipe! This will be published as soon as we approve it :)</a> 
+                <div class="alert alert-success alert-dismissible fade show" role="alert" id="msg">
+                    Thanks for submitting your recipe! This will be published as soon as we approve it :)
                 </div>
                 {% elif "/update_success/" == request.path %}
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <div class="alert alert-success alert-dismissible fade show" role="alert" id="msg">
                     Thanks for submitting your edit! Your recipe will be re-posted as soon as we approve the update :) 
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
                 </div>
-
+                {% elif "/delete_success/" == request.path %}
+                <div class="alert alert-success alert-dismissible fade show" role="alert" id="msg">
+                    You have deleted your post.
+                </div>
                 {% endif %}
                 {% for post in post_list %}
                 <div class="col-md-4">
