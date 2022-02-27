@@ -9,6 +9,12 @@ body {
     color: black;
 }    
 
+.btn-outline-success {
+    color: #198754;
+    border-color: #198754;
+    margin-right: 10px;
+}
+
 .thin {
     font-weight: 300;
 }
