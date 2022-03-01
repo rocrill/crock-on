@@ -161,3 +161,6 @@ class PostDeleteView(generic.DeleteView):
     def get_success_url(self):
         return reverse('delete_success')
   
+class about(View):
+    template_name = "about.html"
+    
