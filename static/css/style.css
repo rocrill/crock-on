@@ -1,17 +1,26 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #23BBBB;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container-fluid{
+    background-color: #FFCF9C;
+}
+
+.bg-white {
+    background-color: #fff;
 }
 
 .logo {
-    font-family: 'Roboto Serif', sans-serif;
-    font-size: 1.4rem;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2rem;
     font-weight: 700;
-    color: black;
+    color: #CA054D;
 }    
 
 .btn-outline-success {
-    color: #198754;
-    border-color: #198754;
+    color: #CA054D;
+    border-color: #CA054D;
     margin-right: 10px;
 }
 
@@ -70,7 +79,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #3B1C32;
     color: white;
     position: relative;
 }
@@ -102,7 +111,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #CA054D;
 }
 
 .post-title {
