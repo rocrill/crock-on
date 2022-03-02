@@ -24,6 +24,11 @@ body {
     margin-right: 10px;
 }
 
+.btn-outline-success:hover {
+    background-color: #59B176;
+    color:#fff;
+}
+
 .thin {
     font-weight: 300;
 }
@@ -202,4 +207,14 @@ a {
     text-decoration: underline;
     color:#0E070C;
     /*font-size: larger;*/
+}
+
+.form-group {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.btn-btn-outline-info {
+    margin-left: 40px;
+    margin-top: 10px;
 }
