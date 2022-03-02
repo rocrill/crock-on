@@ -144,9 +144,8 @@ class PostUpdateView(generic.UpdateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
+        form.instance.status = 0
         return super().form_valid(form) 
-
-        return render(request, 'upload.html', {'form': form})
 
     def get_success_url(self):
         return reverse('update_success')
