@@ -214,12 +214,26 @@ body {
 }
 
 a {
-   /* color: #0d6efd;*/
-    text-decoration: underline;
-    color:#0E070C;
-    /*font-size: larger;*/
+    text-decoration: none;
+    color:#CA054D;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+a.nav-link {
+    color: #0E070C !important;
+}
+
+a.nav-link:hover {
+    color: #CA054D !important;
+}
+
+a.nav-link.active {
+    color: #CA054D !important;
+    text-decoration: underline;
+}
 .form-group {
     margin-left: 40px;
     margin-right: 40px;
