@@ -154,11 +154,10 @@ class PostUpdateView(generic.UpdateView):
 class PostDeleteView(generic.DeleteView):
     model = Post
     template_name = "delete_post.html"
-    fields = ['title', 'slug', 'content', 'featured_image']
-    #success_url = reverse_lazy('home')
-    
-    def get_success_url(self):
-        return reverse('delete_success')
+
+    def get(self, request, slug, *args, **kwargs):
+        Post.objects.filter(slug=slug).delete()
+        return HttpResponseRedirect(reverse('delete_success'))
   
 class about(View):
     template_name = "about.html"
