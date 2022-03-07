@@ -230,10 +230,15 @@ a.nav-link:hover {
     color: #CA054D !important;
 }
 
-a.nav-link.active {
+a.nav-link-active {
     color: #CA054D !important;
-    text-decoration: underline;
 }
+
+/*a.nav-link {
+    color: #CA054D !important;
+    text-decoration: underline !important;
+}*/
+
 .form-group {
     margin-left: 40px;
     margin-right: 40px;
