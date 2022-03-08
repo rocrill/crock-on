@@ -243,3 +243,7 @@ a.nav-link-active {
     margin-left: 40px;
     margin-top: 10px;
 }
+
+.text-secondary {
+    color:#0E070C !important;;
+}
