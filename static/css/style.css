@@ -241,5 +241,9 @@ a.nav-link-active {
 }
 
 .text-secondary {
-    color:#0E070C !important;;
+    color:#0E070C !important;
+}
+
+.socials:hover {
+    color:#59B176;
 }

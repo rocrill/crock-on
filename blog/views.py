@@ -8,7 +8,6 @@ from django.urls import reverse_lazy
 from django.db.models import Q
 
 
-
 def search_recipes(request):
     if request.method == "POST":
         searched = request.POST['searched']
@@ -16,11 +15,12 @@ def search_recipes(request):
         recipes = Post.objects.filter(
             Q(content__icontains=searched) | Q(title__icontains=searched))
 
-        return render(request, 'search_recipes.html', 
-        {'searched' :searched,
-        'recipes' :recipes})
+        return render(request, 'search_recipes.html',
+                      {'searched': searched,
+                       'recipes': recipes})
     else:
         return render(request, 'search_recipes.html', {})
+
 
 def add_recipe(request):
     form = None
@@ -40,6 +40,7 @@ def add_recipe(request):
         form = PostForm()
     return render(request, 'post_form.html', {'form': form})
 
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
@@ -52,7 +53,7 @@ class PostList(generic.ListView):
 #     queryset = Post.objects.all().order_by('?')
 #     template_name = "index.html"
 #     paginate_by = 6
-    
+
 
 class PostDetail(View):
 
@@ -76,7 +77,7 @@ class PostDetail(View):
             },
         )
 
-    def post (self, request, slug, *args, **kwargs):
+    def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -84,7 +85,7 @@ class PostDetail(View):
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
-        comment_form = CommentForm(data = request.POST) 
+        comment_form = CommentForm(data=request.POST)
 
         if comment_form.is_valid():
             comment_form.instance.email = request.user.email
@@ -93,8 +94,7 @@ class PostDetail(View):
             comment.post = post
             comment.save()
         else:
-            comment_form = CommentForm()    
-
+            comment_form = CommentForm()
 
         return render(
             request,
@@ -108,17 +108,18 @@ class PostDetail(View):
             },
         )
 
+
 class PostLike(View):
 
     def post(self, request, slug):
-        post=get_object_or_404(Post, slug=slug)
+        post = get_object_or_404(Post, slug=slug)
 
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('post_detail', args =[slug]))
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
 # class PostCreateView(generic.CreateView):
@@ -129,12 +130,9 @@ class PostLike(View):
 #     def form_valid(self, form):
 #         form.instance.author = self.request.user
 #         #your_object.user = request.user
-#         return super().form_valid(form) 
+#         return super().form_valid(form)
 
 #         return render(request, 'upload.html', {'form': form})
-
-      
-
 
 
 class PostUpdateView(generic.UpdateView):
@@ -145,7 +143,7 @@ class PostUpdateView(generic.UpdateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         form.instance.status = 0
-        return super().form_valid(form) 
+        return super().form_valid(form)
 
     def get_success_url(self):
         return reverse('update_success')
@@ -158,7 +156,7 @@ class PostDeleteView(generic.DeleteView):
     def get(self, request, slug, *args, **kwargs):
         Post.objects.filter(slug=slug).delete()
         return HttpResponseRedirect(reverse('delete_success'))
-  
+
+
 class about(View):
     template_name = "about.html"
-    
