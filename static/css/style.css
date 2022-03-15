@@ -58,6 +58,11 @@ body {
     color: #0E070C !important;
 }
 
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 0.01rem;
+}
+
 .card-img-top { 
     width: 135%; 
     height: 20vw; 
@@ -242,6 +247,11 @@ a.nav-link-active {
 
 .text-secondary {
     color:#0E070C !important;
+    margin-left: 5px !important;
+}
+
+.fa-heart:before {
+    margin-left: 10px;
 }
 
 .socials:hover {
