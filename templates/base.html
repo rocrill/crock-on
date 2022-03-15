@@ -41,17 +41,7 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link-logout" href="{% url 'account_logout' %}">Logout</a>
-                    </li>
-                    <li class="nav-item">
                         <a id="nav-link-sharerecipe" class="nav-link" href="{% url 'post-create' %}">Share Recipe</a>
-                    </li>
-                    {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-link-signup" href="{% url 'account_signup' %}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-link-login" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -60,9 +50,20 @@
                     <input class="form-control me-2" type="search" placeholder="Search recipes" aria-label="Search" name="searched">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                   </form>
-                <span class="navbar-text text-muted">
-                    Logout
-                </span>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-logout" href="{% url 'account_logout' %}">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-login" href="{% url 'account_login' %}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-signup" href="{% url 'account_signup' %}">Register</a>
+                </li>
+                {% endif %}
+                </ul>
             </div>
         </div>
     </nav>
