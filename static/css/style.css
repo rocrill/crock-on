@@ -137,12 +137,12 @@ body {
     color: lightgray;
 }
 
-.btn-signup {
+.btn-signinout {
     background-color: #59B176;
     color: #fff;
 }
 
-.btn-signup:hover {
+.btn-signinout:hover {
     background-color: #fff;
     color: #CA054D;
     border-color: #CA054D;
