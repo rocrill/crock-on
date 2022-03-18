@@ -10,6 +10,13 @@ body {
     margin-bottom: 40px;
 }
 
+.recipe-post-heading {
+    margin-top:30px;
+}
+
+.edit-heading {
+    margin-top: 30px;
+}
 .container-fluid{
     background-color: #FFCC99;
 }
