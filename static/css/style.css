@@ -145,7 +145,8 @@ body {
 .btn-lg {
     background-color: #59B176;
     color: #fff;
-    margin: 10px;
+    margin-left: 40px;
+    margin-top: 10px;
 }
 
 .btn-signinout {
