@@ -142,6 +142,12 @@ body {
     color: lightgray;
 }
 
+.btn-lg {
+    background-color: #59B176;
+    color: #fff;
+    margin: 10px;
+}
+
 .btn-signinout {
     background-color: #59B176;
     color: #fff;
