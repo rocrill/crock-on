@@ -145,13 +145,21 @@ body {
 .btn-lg {
     background-color: #59B176;
     color: #fff;
+    border-color:#006400;
     margin-left: 40px;
     margin-top: 10px;
+}
+
+.btn-lg:hover {
+    color:#CA054D;
+    background-color: #fff;
+    border-color:#CA054D;
 }
 
 .btn-signinout {
     background-color: #59B176;
     color: #fff;
+    border-color:#006400;
 }
 
 .btn-signinout:hover {
@@ -163,6 +171,7 @@ body {
 .button {
     background-color: #59B176;
     color: #fff;
+    border-color:#006400;
 }
 
 .button:hover {
