@@ -86,6 +86,11 @@ p.author {
 
 #random_recipe {
     margin-top: 30px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+.heading-font {
+    font-family: 'Bungee Shade', cursive;
 }
 
 .card {

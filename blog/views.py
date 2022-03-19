@@ -12,11 +12,8 @@ from django.contrib import messages
 def search_recipes(request):
     if request.method == "POST":
         searched = request.POST['searched']
-       # recipes = Post.objects.filter(title__icontains=searched)
         recipes = Post.objects.filter(
-            #Q(title__icontains=searched) | Q(author__icontains=searched)) 
             Q(content__icontains=searched) | Q(title__icontains=searched) | Q(author__username__icontains=searched)).filter(status=1)
-            
 
         return render(request, 'search_recipes.html',
                       {'searched': searched,
@@ -31,15 +28,9 @@ def add_recipe(request):
         form = PostForm(request.POST, request.FILES)
         form.instance.author = request.user
         if form.is_valid():
-            # print(f'len of files={len(request.FILES)}')
-            # file = request.FILES['featured_image']
-
-            # upload_data = cloudinary.uploader.upload(file)
-            # print(f'upload_data={upload_data}')
 
             form.save()
             messages.success(request, "Thanks for submitting your recipe! This will be published as soon as we review it :)" )
-            #return HttpResponseRedirect('/')
             return redirect ("home") 
     else:
         form = PostForm()
@@ -110,7 +101,6 @@ class PostDetail(View):
             },
         )
 
-
 class PostLike(View):
 
     def post(self, request, slug):
@@ -123,25 +113,10 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-
-# class PostCreateView(generic.CreateView):
-#     model = Post
-#     fields = ['title', 'slug', 'content', 'header_image', 'featured_image']
-#     template_name = "post_form.html"
-
-#     def form_valid(self, form):
-#         form.instance.author = self.request.user
-#         #your_object.user = request.user
-#         return super().form_valid(form)
-
-#         return render(request, 'upload.html', {'form': form})
-
-
 class PostUpdateView(generic.UpdateView):
     model = Post
     form_class = PostForm
     template_name = "update_post.html"
-    #fields = ['title', 'slug', 'content', 'featured_image']
 
     def form_valid(self, form):
         form.instance.author = self.request.user
@@ -163,7 +138,6 @@ class PostDeleteView(generic.DeleteView):
         post.delete()
         messages.success(self.request, msg)
         return HttpResponseRedirect(reverse('home'))
-
 
 class about(View):
     template_name = "about.html"
