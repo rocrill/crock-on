@@ -10,6 +10,12 @@
                 <h1 class="post-title">{{ post.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on}}</p>
+                {% if user == post.author %}
+                <div class="author_edit">
+                    <a href="{% url 'post-update' post.slug %}">Edit</a>
+                    <a href="{% url 'post-delete' post.slug %}">Delete</a>
+                </div>
+                {% endif %}
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
@@ -118,12 +124,7 @@
                     {% csrf_token %}
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
-                {% if user == post.author %}
-                <small>
-                    <a href="{% url 'post-update' post.slug %}">Edit</a>
-                    <a href="{% url 'post-delete' post.slug %}">Delete</a>
-                </small>
-                {% endif %}
+                
                 
                 {% endif %}
                 {% endif %}

@@ -71,6 +71,15 @@ body {
     margin-bottom: 20px;
 }
 
+.author_edit {
+    margin-left:32px;
+}
+
+
+.author_edit > a {
+    color: #1E90FF !important;
+} 
+
 .card {
     border: none;
     background-color: transparent;
