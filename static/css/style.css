@@ -84,6 +84,10 @@ p.author {
     color: #1E90FF !important;
 } 
 
+#random_recipe {
+    margin-top: 30px;
+}
+
 .card {
     border: none;
     background-color: transparent;

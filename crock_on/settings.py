@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'autoslug',
+    'django_extensions',
 ]
 
 SITE_ID = 1
