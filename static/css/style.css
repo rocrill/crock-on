@@ -63,6 +63,10 @@ body {
     background-color: #FFCC99;
 }
 
+.search_recipe {
+    margin-top: 30px;
+}
+
 .create_update_button {
     margin-bottom: 20px;
 }

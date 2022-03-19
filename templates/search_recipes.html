@@ -2,16 +2,23 @@
 
 {% block content %}
 
+<div class="search_recipe"></div>
     <center>
-    {% if searched %}    
-        <h1>You searched for {{ searched }}</h1>
+    {% if searched %}  
+
+        {% if recipes|length < 1 %}
+        <h1>No results for '{{ searched }}' :(</h1>
+        {% else%}
+        <h1>You searched for '{{ searched }}'</h1>
         <br/>
         {% for post in recipes %}
             {% include 'postlisttemplate.html' %}<br/>
+
         {% endfor %}
+        {% endif %}
     {% else %}
         <h1>Oops, you forgot to search for a recipe!</h1>
     {% endif %}
     </center>
-
+</div>
 {% endblock %}
