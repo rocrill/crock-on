@@ -83,6 +83,12 @@ body {
     object-fit: cover;
 }
 
+/*
+.card-text {
+    flex: 1 1 auto;
+    padding: 1rem 0.01rem;
+} */
+
 .image-container {
     position: relative;
 }
@@ -192,6 +198,21 @@ body {
     background-color: #fff;
     color: #CA054D;
     border-color: #CA054D;
+}
+
+.page-link {
+    background-color: #fff;
+    color: #CA054D;
+    border-color: #CA054D;
+    transition: none;
+}
+
+.page-link:hover {
+    background-color: #59B176;
+    color: #fff;
+    border-color:#006400;
+    transition: none;
+}
 }
 
 .link {
