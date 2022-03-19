@@ -38,7 +38,7 @@ def add_recipe(request):
             # print(f'upload_data={upload_data}')
 
             form.save()
-            messages.success(request, "Thanks!" )
+            messages.success(request, "Thanks for submitting your recipe! This will be published as soon as we review it :)" )
             #return HttpResponseRedirect('/')
             return redirect ("home") 
     else:
@@ -149,7 +149,7 @@ class PostUpdateView(generic.UpdateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        messages.success(self.request, "Thanks for your update!" )
+        messages.success(self.request, "Thanks for your update! Your post will be re-published as soon as we review the changes :)" )
         return reverse('home')
 
 
