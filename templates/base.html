@@ -40,7 +40,7 @@
                         <a id="nav-link-about" class="nav-link" aria-current="page" href="{% url 'about' %}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a id="nav-link-about" class="nav-link" aria-current="page" href="/#random_recipe">Random Recipe</a>
+                        <a id="nav-link-about" class="nav-link" aria-current="page" href="{% url 'random_recipe' %}">Random Recipe</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">

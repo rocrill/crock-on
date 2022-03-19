@@ -14,6 +14,7 @@ urlpatterns = [
     path('search_recipes', views.search_recipes, name='search_recipes'),
     path('<slug:slug>/update', views.PostUpdateView.as_view(), name='post-update'),
     path('<slug:slug>/delete', views.PostDeleteView.as_view(), name='post-delete'),
+    path('random_recipe', views.RandomPostList.as_view(), name='random_recipe'),
     path('about', django.views.generic.TemplateView.as_view(template_name='about.html'), name='about'),
     #path('post/new/', views.PostCreateView.as_view(success_url="/success/"), name='post-create'),
     path('post/new/', views.add_recipe, name='post-create'),
