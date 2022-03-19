@@ -71,10 +71,14 @@ body {
     margin-bottom: 20px;
 }
 
+p.author {
+    font-size: large;
+    color:#fff;
+}
+
 .author_edit {
     margin-left:32px;
 }
-
 
 .author_edit > a {
     color: #1E90FF !important;
@@ -119,13 +123,14 @@ body {
     position: relative;
 }
 
+/*
 .image-flash {
     position: absolute;
     bottom: 5%;
     min-width: 30%;
     left: -2px;
     background-color: #006400;
-}
+} */
 
 .author {
     color: white;
@@ -285,10 +290,12 @@ body {
     min-width: 30%;
     left: -2px;
     background-color: #59B176;
+    color:#fff;
 }
 
 .author{
-    color:#fff;
+    color:#0E070C;
+    text-decoration: bold;
 }
 
 a {
