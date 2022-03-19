@@ -139,8 +139,9 @@ class PostLike(View):
 
 class PostUpdateView(generic.UpdateView):
     model = Post
+    form_class = PostForm
     template_name = "update_post.html"
-    fields = ['title', 'slug', 'content', 'featured_image']
+    #fields = ['title', 'slug', 'content', 'featured_image']
 
     def form_valid(self, form):
         form.instance.author = self.request.user

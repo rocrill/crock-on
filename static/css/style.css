@@ -63,6 +63,10 @@ body {
     background-color: #FFCC99;
 }
 
+.create_update_button {
+    margin-bottom: 20px;
+}
+
 .card {
     border: none;
     background-color: transparent;
