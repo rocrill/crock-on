@@ -13,8 +13,8 @@ def search_recipes(request):
         searched = request.POST['searched']
        # recipes = Post.objects.filter(title__icontains=searched)
         recipes = Post.objects.filter(
-           # Q(title__icontains=searched) | Q(author__icontains=searched)) 
-            Q(content__icontains=searched) | Q(title__icontains=searched))
+            #Q(title__icontains=searched) | Q(author__icontains=searched)) 
+            Q(content__icontains=searched) | Q(title__icontains=searched) | Q(author__username__icontains=searched)).filter(status=1)
             
 
         return render(request, 'search_recipes.html',
