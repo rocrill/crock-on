@@ -6,7 +6,6 @@ import django
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
-    path('#random_recipe/', views.PostList.as_view(), name='random_recipe'),
     path('success/', views.PostList.as_view(), name='success'),
     path('update_success/', views.PostList.as_view(), name='update_success'),
     path('delete_success/', views.PostList.as_view(), name='delete_success'),
