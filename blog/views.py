@@ -148,7 +148,8 @@ class PostUpdateView(generic.UpdateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse('update_success')
+        messages.success(self.request, "Thanks for your update!" )
+        return reverse('home')
 
 
 class PostDeleteView(generic.DeleteView):
