@@ -83,6 +83,11 @@ body {
     object-fit: cover;
 }
 
+.search_button {
+    background-color: #fff;
+    color:#CA054D;
+}
+
 .low_posts {
     margin-top: 60px;
 }

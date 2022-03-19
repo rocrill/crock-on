@@ -21,6 +21,15 @@
                     You have deleted your post.
                 </div>
                 {% endif %}
+
+                <center>
+                            <form class="d-flex" method=POST action="{% url 'search_recipes' %}">
+                                {% csrf_token %}
+                                <input class="form-control me-2" type="search" placeholder="Search recipes, authors or ingredients" aria-label="Search" name="searched" style="width: 600px;">
+                                <button class="btn btn-outline-success search_button" type="submit">Search</button>
+                            </form>
+                </center>
+
                 {% for post in post_list %}
                 <div class="col-md-4">
                     <div class="card mb-4 col-sm-12 col-lg-6">
