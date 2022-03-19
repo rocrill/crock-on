@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from .models import Post
 from .forms import CommentForm, PostForm
@@ -6,6 +6,7 @@ from django.http import HttpResponseRedirect
 from django.utils.text import slugify
 from django.urls import reverse_lazy
 from django.db.models import Q
+from django.contrib import messages
 
 
 def search_recipes(request):
@@ -37,7 +38,9 @@ def add_recipe(request):
             # print(f'upload_data={upload_data}')
 
             form.save()
-            return HttpResponseRedirect('/success/')
+            messages.success(request, "Thanks!" )
+            #return HttpResponseRedirect('/')
+            return redirect ("home") 
     else:
         form = PostForm()
     return render(request, 'post_form.html', {'form': form})
