@@ -8,20 +8,6 @@
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                {% if "/success/" == request.path %}
-                <div class="alert alert-success alert-dismissible fade show" role="alert" id="msg">
-                    Thanks for submitting your recipe! This will be published as soon as we approve it :)
-                </div>
-                {% elif "/update_success/" == request.path %}
-                <div class="alert alert-success alert-dismissible fade show" role="alert" id="msg">
-                    Thanks for submitting your edit! Your recipe will be re-posted as soon as we approve the update :) 
-                </div>
-                {% elif "/delete_success/" == request.path %}
-                <div class="alert alert-success alert-dismissible fade show" role="alert" id="msg">
-                    You have deleted your post.
-                </div>
-                {% endif %}
-
                
                 <form class="d-flex" method=POST action="{% url 'search_recipes' %}">
                         {% csrf_token %}

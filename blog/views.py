@@ -157,8 +157,11 @@ class PostDeleteView(generic.DeleteView):
     template_name = "delete_post.html"
 
     def get(self, request, slug, *args, **kwargs):
-        Post.objects.filter(slug=slug).delete()
-        return HttpResponseRedirect(reverse('delete_success'))
+        post = Post.objects.filter(slug=slug)
+        msg=f"You have deleted your '{ post[0].title }' recipe!"
+        post.delete()
+        messages.success(self.request, msg)
+        return HttpResponseRedirect(reverse('home'))
 
 
 class about(View):
