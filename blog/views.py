@@ -45,7 +45,7 @@ class PostList(generic.ListView):
 
 class RandomPostList(generic.ListView):
     model = Post
-    queryset = Post.objects.all().order_by('?')
+    queryset = Post.objects.all().filter(status=1).order_by('?')
     template_name = "random_recipe.html"
 
 class PostDetail(View):
