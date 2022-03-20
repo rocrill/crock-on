@@ -1,6 +1,7 @@
 body {
     background-color: #fff;
     font-family: 'Roboto Slab', serif;
+    overflow-x:hidden;
 }
 
 .about_crockon {
@@ -350,3 +351,4 @@ a.nav-link-active {
 .socials:hover {
     color:#59B176;
 }
+

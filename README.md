@@ -2,7 +2,7 @@
 
 ## Introduction
 
-![Image of Device responsiveness](assets/images/devices.png)
+![Image of Device responsiveness](static/images/responsive_firstdraft.png)
 
 Crock-on is a recipe sharing blog website
 
