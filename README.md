@@ -4,13 +4,13 @@
 
 ![Image of Device responsiveness](static/images/responsive_firstdraft.png)
 
-Crock-on is a recipe sharing blog website
+Crock-on is a recipe sharing blog website. It aims to provide users with easy recipe ideas that their fellow amateur cooks have shared. It aims to be accessible to every level of cook, and also to serve as a place where people can share their own recipes and interact with other cook's recipes without having to go through the motions of setting up their own cookery blog. 
 
 ## User Experience (UX)
 
 ### Project Goals
 
-* To create a 
+* To create a recipe blog for users to (i) browse other user recipes for recipe ideas and inspiration, and (ii) create a blog that amateur cooks can sign up to to share their recipes with the blog community and engage with other community members' posts.
 
 ### User Goals
 
@@ -22,7 +22,7 @@ Crock-on is a recipe sharing blog website
 
 ### Target Audience
 
-* Good cooks who want to share their recipe ideas, anyone looking for recipe ideas that are accessible.
+* Cooks who want to share their recipe ideas without having to commit to their own personal cookery blog, and anyone looking for recipe ideas that are accessible as they have been created by other amateur cooks.
 
 ### User Stories
 
@@ -47,19 +47,21 @@ Crock-on is a recipe sharing blog website
   * As a site owner, I want maintain a safe and secure site where only registered users can share content and comment on other's posts, and where all posts are monitored for quality, and comments for inappropriate content.
   *  As a site owner, I want to have clear social media links displayed on the site which may lead to an increased following on channels to help with my blog's visibility.
 
+More specific user stories are discussed in the context of website features in the Features section below.
+
 ### Structure:
 
 The site has 4 pages: 
 
-Home page
+ * Home page
 
-About page
+ * About page
 
-Random recipe generator page
+ * Random recipe generator page
 
-Share recipe page
+ * Share recipe page
 
-Log in/out and register pages
+ * Log in/out and register pages
 
 For consistency of user experience, the site logo, navigation links and footer remain consitent throughout the site.
 
@@ -99,17 +101,24 @@ Mock-ups were made using Balsamiq to help plan and visualise the site design. Th
 
 ### Existing Features:
 
-* Navigation
-
-  * Horizontally aligned navigation bar with 4 navigation links exists on all pages.
+* Navigation bar and footer:
 
   * Navigation bar is always at the top of the page so users know what to expect and can navigate easily.
 
-  * The site logo is clickable and allows the user to return to the homepage from anywhere on the site.
+  * A border appears at the bottom of the menu links when they are hovered over for responsiveness.
 
-  * A border appears at the bottom of the menu links when they are hovered over.
+  * On mobile, the navigation menu links are within a collapsed drop down menu instead of in-line.
 
-  * On mobile, the navigation menu links are displayed underneath and to the right of the logo, instead of in-line.
+User stories relating to Navigation bar and footer:
+
+  * As a user the navigation bar is displayed with a logo on all pages with a search box on a desktop, tablet and mobile.
+  * As a user not logged in, I see a Register/Login link in the nav bar. Clicking this leads me to the appropriate registration or sign in pages and enable me to register and sign in,
+  * As a logged in user, I am notified when I am logged in and I see a logout link in the nav which enables me to click sign out which logs me out.
+  * As a user I can view the Home link in the header, as well as the website logo, and clicking both will bring me to the homepage.
+  * As a user I can click the ‘Share Recipe’ nav link which brings me to the recipe posting page where I am able to create a post.
+  * As a user I can click the ‘Random Recipe’ link which takes me to the page where a new random recipe is displayed each time I visit it.
+  * As a user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
+  * As a user, I can access the blog site's social media pages which open in new tabs so that I can stay updated on blog news and updates.
 
   Desktop:
 
@@ -123,6 +132,42 @@ Mock-ups were made using Balsamiq to help plan and visualise the site design. Th
 
   * The recipe list is neat and well-proportioned. Each post clearly states the title, author name and no. of likes and comments received.
   * The recipe of the day can be found underneath the main recipe list, and there is a 'Recipe of the day' link included in the nav bar, so that users who are interested in this feature can quickly redirect to the bottom of the page to find and use the generator without scrolling.
+  * Page is paginated.
+
+  general pics
+
+User stories relating to home page.
+
+  * As a user, I want to see a list of recipes with visually appealing images, listing clear titles and the post authors. 
+  * As a returning user, I want to see the newest recipes displayed in date order with the most recent postings first on the page:
+  * As a user, I want to see the number of comments and number of likes displayed on each recipe card on the post detail page, so that I have an idea of the popularity and engagement of a post when deciding which ones to look at.  
+  * As a user and post author, I want to be able to edit or delete a recipe post for which I am the author. 
+  * As a user if there are more than six recipes on the page, the page is paginated with six recipes per page.
+
+* Recipe post detail page
+
+  * This contains a header with the post title, author name and date of posting. Links to edit and delete the post will also appear here if it is the post author logged in. 
+  * Below this is the main image of the recipe and below this is the recipe post itself, which is in the format of an ingrdients list and method. Most users post in this format, however if not, a website admin will re-format the instructions if needed when reviewing the post for quality after it is posted as a draft.
+  * Below the reecipe are user comments and the comment box will also appear here for authenticated logged in users. When a valid user submits a valid comment form, they receive a notification that their comment is awaiting approval. Once this is approved by admin the comment will appear under the post.
+  * There is also a number of comments and number of likes displayed on the post detail page. 
+
+
+  general pics
+
+User stories relating to recipe post detail page:
+
+  * I want to be able to edit or delete a recipe post for which I am the author.
+  * As a user, I want to be able to comment on a recipe post
+  * As a user, I want to be able to like and unlike a recipe post.
+  * As a useruser who has not registered or logged into the website, I cannot add a comment to a recipe post.
+  
+* Random Recipe page
+
+  * The random recipe page is a page which generates a new random recipe each time the user visits it. It contains the recipe card as displayed on the home page, containing the recipe image, title, author name, number of likes and comments and posting date.
+
+User stories relating to recipe Random Recipe page:
+
+  * As a user, I want quick and easy inspiration for cooking ideas without browsing through a large number of recipes.
 
   Desktop:
 
@@ -132,11 +177,6 @@ Mock-ups were made using Balsamiq to help plan and visualise the site design. Th
 
   ![Image of mobile home page](.png)
 
-  NB - image of the recipe generator:
-
-* Post detail page:
-
-  * Header recipe image, recipe content, and comments section. For registered users who are logged in, a comment box also appears on the bottom right hand side of the page for them to submit comments. Users can also like the post from this page by clicking on the heart icon (they can only like this once, otherwise clicking again will remove their like.). 
 
 * About page
 
@@ -197,10 +237,24 @@ Mock-ups were made using Balsamiq to help plan and visualise the site design. Th
   ![Image of Mobile Register](assets/images/.png)
 
 
+
+* Admin
+
+
+  * These three pages have a similar layout. The function is in the centre of the page.
+....
+
+User stories relating to Admin:
+
+  * These three pages have a similar layout. The function is in the centre of the page.
+
+
 ### Features To be Implemented in Future:
 
 * Recipe list page: 
 * Recipe detail page: Rating feature
+* Tag posts with categories e.g. vegetarian vegan so user can search by these terms.
+* Paginate comments
 
 ## Technologies Used
 
@@ -210,7 +264,7 @@ Mock-ups were made using Balsamiq to help plan and visualise the site design. Th
 *  [CSS 3](https://en.wikipedia.org/wiki/CSS)
 *  [Javascript](https://www.javascript.com/)
 *  [Django]((https://www.djangoproject.com/)
-* [Python](https://www.python.org/)
+*  [Python](https://www.python.org/)
 
 Python was used for the project's server side coding, in addition to a number of libraries. This is the list as per the requirements.txt file:
 asgiref==3.5.0
