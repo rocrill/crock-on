@@ -395,24 +395,47 @@ Feature User Story testing:
   * 1.2 As a user not logged in, I see a Register/Login link in the nav bar. Clicking this leads me to the appropriate registration or sign in pages and enable me to register and sign in.
     
     (i)![Desktop](static/images/desktop-nav-menu.png)
-    (ii)![Desktop](static/images/register-2.png)
+    (ii)-(a)![Desktop](static/images/register-2.png)
+    (ii)-(b)![Desktop](static/images/login-page.png)
     (iii)![Desktop](static/images/register-3.png)
 
     Result: Pass 
 
   * 1.3 As a logged in user, I am notified when I am logged in and I see a logout link in the nav which enables me to click sign out which logs me out.
 
-    (i)![Desktop](static/images/signin-confirmation-message.png)
-    (ii)![Desktop](static/images/signin-confirmation-message.png)
+    (i)![Desktop](static/images/sign-in-msg-logout.png)
+    (ii)![Desktop](static/images/signout-page.png)
+    (iii)![Desktop](static/images/signout-msg.png)
 
+    Result: Pass
 
+  * 1.4 As a user I can view the Home link in the nav bar, as well as the website logo, and clicking both will bring me to the homepage.
 
-  * 1.4 As a user I can view the Home link in the header, as well as the website logo, and clicking both will bring me to the homepage.
+    (i)![Desktop](static/images/home-fromheader-1.png)
+    (ii)![Desktop](static/images/home-fromheader-2.png)
+
+    Result: Pass
+
   * 1.5 As a user I can click the ‘Share Recipe’ nav link which brings me to the recipe posting page where I am able to create a post.
+
+    (i)![Desktop](static/images/post-fromhome.png)
+    (ii)![Desktop](static/images/post-page.png)
+    (iii)![Desktop](static/images/post-conf.png)
+
+    Result: Pass
+
   * 1.6 As a user I can click the ‘Random Recipe’ link which takes me to the page where a new random recipe is displayed each time I visit it.
+
+   (i)![Desktop](static/images/randomrecipe-fromnav.png)
+   (ii)![Desktop](static/images/random-recipe.png)
+
+   Result: Pass
+
   * 1.7 As a user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
   
+        TO do
 
+   Result: Pass
 
 
 ## Validator Testing
