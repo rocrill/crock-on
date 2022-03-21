@@ -101,7 +101,7 @@ Mock-ups were made using Balsamiq to help plan and visualise the site design. Th
 
 ### Existing Features:
 
-* Navigation bar and footer:
+Feature 1. Navigation bar
 
   * Navigation bar is always at the top of the page so users know what to expect and can navigate easily.
 
@@ -111,15 +111,14 @@ Mock-ups were made using Balsamiq to help plan and visualise the site design. Th
 
 User stories relating to Navigation bar and footer:
 
-  * As a user the navigation bar is displayed with a logo on all pages with a search box on a desktop, tablet and mobile.
-  * As a user not logged in, I see a Register/Login link in the nav bar. Clicking this leads me to the appropriate registration or sign in pages and enable me to register and sign in,
-  * As a logged in user, I am notified when I am logged in and I see a logout link in the nav which enables me to click sign out which logs me out.
-  * As a user I can view the Home link in the header, as well as the website logo, and clicking both will bring me to the homepage.
-  * As a user I can click the ‘Share Recipe’ nav link which brings me to the recipe posting page where I am able to create a post.
-  * As a user I can click the ‘Random Recipe’ link which takes me to the page where a new random recipe is displayed each time I visit it.
-  * As a user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
-  * As a user, I can access the blog site's social media pages which open in new tabs so that I can stay updated on blog news and updates.
-
+  * 1.1 As a user the navigation bar is displayed with a logo on all pages with a search box on a desktop, tablet and mobile.
+  * 1.2 As a user not logged in, I see a Register/Login link in the nav bar. Clicking this leads me to the appropriate registration or sign in pages and enable me to register and sign in,
+  * 1.3 As a logged in user, I am notified when I am logged in and I see a logout link in the nav which enables me to click sign out which logs me out.
+  * 1.4 As a user I can view the Home link in the header, as well as the website logo, and clicking both will bring me to the homepage.
+  * 1.5 As a user I can click the ‘Share Recipe’ nav link which brings me to the recipe posting page where I am able to create a post.
+  * 1.6 As a user I can click the ‘Random Recipe’ link which takes me to the page where a new random recipe is displayed each time I visit it.
+  * 1.7 As a user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
+  
   Desktop:
 
   ![Image of desktop menu](.png)
@@ -128,7 +127,7 @@ User stories relating to Navigation bar and footer:
 
   ![Image of mobile menu](.png)
 
-* Home page which contains the recipe list.
+Feature 2. Home page which contains the recipe list.
 
   * The recipe list is neat and well-proportioned. Each post clearly states the title, author name and no. of likes and comments received.
   * The recipe of the day can be found underneath the main recipe list, and there is a 'Recipe of the day' link included in the nav bar, so that users who are interested in this feature can quickly redirect to the bottom of the page to find and use the generator without scrolling.
@@ -138,13 +137,13 @@ User stories relating to Navigation bar and footer:
 
 User stories relating to home page.
 
-  * As a user, I want to see a list of recipes with visually appealing images, listing clear titles and the post authors. 
-  * As a returning user, I want to see the newest recipes displayed in date order with the most recent postings first on the page:
-  * As a user, I want to see the number of comments and number of likes displayed on each recipe card on the post detail page, so that I have an idea of the popularity and engagement of a post when deciding which ones to look at.  
-  * As a user and post author, I want to be able to edit or delete a recipe post for which I am the author. 
-  * As a user if there are more than six recipes on the page, the page is paginated with six recipes per page.
+  * 2.1 As a user, I want to see a list of recipes with visually appealing images, listing clear titles and the post authors. 
+  * 2.2 As a returning user, I want to see the newest recipes displayed in date order with the most recent postings first on the page:
+  * 2.3 As a user, I want to see the number of comments and number of likes displayed on each recipe card on the post detail page, so that I have an idea of the popularity and engagement of a post when deciding which ones to look at.  
+  * 2.4 As a user and post author, I want to be able to edit or delete a recipe post for which I am the author. 
+  * 2.5 As a user if there are more than six recipes on the page, the page is paginated with six recipes per page.
 
-* Recipe post detail page
+Feature 3. Recipe post detail page
 
   * This contains a header with the post title, author name and date of posting. Links to edit and delete the post will also appear here if it is the post author logged in. 
   * Below this is the main image of the recipe and below this is the recipe post itself, which is in the format of an ingrdients list and method. Most users post in this format, however if not, a website admin will re-format the instructions if needed when reviewing the post for quality after it is posted as a draft.
@@ -156,18 +155,18 @@ User stories relating to home page.
 
 User stories relating to recipe post detail page:
 
-  * I want to be able to edit or delete a recipe post for which I am the author.
-  * As a user, I want to be able to comment on a recipe post
-  * As a user, I want to be able to like and unlike a recipe post.
-  * As a useruser who has not registered or logged into the website, I cannot add a comment to a recipe post.
+  * 3.1 I want to be able to edit or delete a recipe post for which I am the author.
+  * 3.2 As a user, I want to be able to comment on a recipe post
+  * 3.3 As a user, I want to be able to like and unlike a recipe post.
+  * 3.4 As a useruser who has not registered or logged into the website, I cannot add a comment to a recipe post.
   
-* Random Recipe page
+Feature 4. Random Recipe page
 
   * The random recipe page is a page which generates a new random recipe each time the user visits it. It contains the recipe card as displayed on the home page, containing the recipe image, title, author name, number of likes and comments and posting date.
 
 User stories relating to recipe Random Recipe page:
 
-  * As a user, I want quick and easy inspiration for cooking ideas without browsing through a large number of recipes.
+  * 4.1 As a user, I want quick and easy inspiration for cooking ideas without browsing through a large number of recipes.
 
   Desktop:
 
@@ -178,7 +177,7 @@ User stories relating to recipe Random Recipe page:
   ![Image of mobile home page](.png)
 
 
-* About page
+Feature 5. About page
 
   * This seciton provides a brief background of the blog, its purpose and a welcoming message for website users.
   
@@ -190,7 +189,7 @@ User stories relating to recipe Random Recipe page:
 
   ![Image of mobile About page](.png)
 
-* Footer
+Feature 6. Footer
 
   * Footer is conventionally placed at the bottom of the site and consistently displayed on all pages.
 
@@ -205,8 +204,13 @@ User stories relating to recipe Random Recipe page:
   Mobile:
 
   ![Image of mobile footer](.png)
+  
+  User stories relating to the footer:
 
-* Share Recipe page
+  * 6.1 As a user, I can access the blog site's social media pages which open in new tabs so that I can stay updated on blog news and updates.
+
+
+Feature 7. Share Recipe page
 
   * This is minimal, with the form located in the centre of the page.
   * The recipe posting form has the option for the user to attach their own recipe image, along with a title, unique slug and recipe content.
@@ -219,7 +223,7 @@ User stories relating to recipe Random Recipe page:
 
   ![Image of Mobile Recipe post page](assets/images/.png)
 
-* Register/Log in and Log out pages:
+Feature 8. Register/Log in and Log out pages:
 
   * These three pages have a similar layout. The function is in the centre of the page.
   * There is user validation when filling out the forms and upon signing out the user is asked if they are sure they would like to do so.
@@ -236,9 +240,11 @@ User stories relating to recipe Random Recipe page:
   ![Image of Mobile Loout](assets/images/.png)
   ![Image of Mobile Register](assets/images/.png)
 
+ User stories relating to Register/Log in and Log out pages:
 
+  * 
 
-* Admin
+Feature 9. Admin
 
 
   * These three pages have a similar layout. The function is in the centre of the page.
@@ -323,7 +329,9 @@ When I was editing for responsiveness I tested the site on several different dev
 
 At the final stages of the project the W3C Markup Validator,W3C CSS Validator Services, along with PEP8 and JSHint were used to validate every page of the project to ensure there were no syntax errors.
 
-## Testing User Stories from the UX Section
+## Testing User Stories 
+
+General:
 
 * First time visitor goals:
 
@@ -371,6 +379,40 @@ At the final stages of the project the W3C Markup Validator,W3C CSS Validator Se
     Test result: Pass.
 
     Explanation
+
+Feature User Story testing:
+
+1. Navigation bar and footer:
+
+  * 1.1 As a user the navigation bar is displayed with a logo on all pages with a search box on a desktop and mobile.
+
+    ![Desktop](static/images/desktop-nav-menu.png)
+
+    ![Mobile](static/images/mobile-nav-menu.png)
+
+    Result: Pass
+
+  * 1.2 As a user not logged in, I see a Register/Login link in the nav bar. Clicking this leads me to the appropriate registration or sign in pages and enable me to register and sign in.
+    
+    (i)![Desktop](static/images/desktop-nav-menu.png)
+    (ii)![Desktop](static/images/register-2.png)
+    (iii)![Desktop](static/images/register-3.png)
+
+    Result: Pass 
+
+  * 1.3 As a logged in user, I am notified when I am logged in and I see a logout link in the nav which enables me to click sign out which logs me out.
+
+    (i)![Desktop](static/images/signin-confirmation-message.png)
+    (ii)![Desktop](static/images/signin-confirmation-message.png)
+
+
+
+  * 1.4 As a user I can view the Home link in the header, as well as the website logo, and clicking both will bring me to the homepage.
+  * 1.5 As a user I can click the ‘Share Recipe’ nav link which brings me to the recipe posting page where I am able to create a post.
+  * 1.6 As a user I can click the ‘Random Recipe’ link which takes me to the page where a new random recipe is displayed each time I visit it.
+  * 1.7 As a user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
+  
+
 
 
 ## Validator Testing
