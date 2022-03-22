@@ -158,7 +158,7 @@ User stories relating to recipe post detail page:
   * 3.1 I want to be able to edit or delete a recipe post for which I am the author.
   * 3.2 As a user, I want to be able to comment on a recipe post
   * 3.3 As a user, I want to be able to like and unlike a recipe post.
-  * 3.4 As a useruser who has not registered or logged into the website, I cannot add a comment to a recipe post.
+  * 3.4 As a user who has not registered or logged into the website, I cannot add a comment to a recipe post.
   
 Feature 4. Random Recipe page
 
@@ -433,10 +433,78 @@ Feature User Story testing:
 
   * 1.7 As a user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
   
-        TO do
+        To do
 
    Result: Pass
 
+2. Home page which contains the recipe list.
+
+  * 2.1 As a user, I want to see a list of recipes with visually appealing images, listing clear titles and the post authors. 
+
+    ![Desktop](static/images/recipe-list.png)
+
+    Result: Pass
+
+  * 2.2 As a returning user, I want to see the newest recipes displayed in date order with the most recent postings first on the page:
+
+    ![Desktop](static/images/list-dateorder.png)
+
+    Result: Pass
+
+  * 2.3 As a user, I want to see the number of comments and number of likes displayed on each recipe card on the post detail page, so that I have an idea of the popularity and engagement of a post when deciding which ones to look at.  
+
+    ![Desktop](static/images/date-time.png)
+
+    Result: Pass
+
+  * 2.4 As a user and post author, I want to be able to edit or delete a recipe post for which I am the author. 
+
+    (i)![Desktop](static/images/authoronly-delete.png)
+    (ii)![Desktop](static/images/non-author-options.png)
+
+    Result: Pass
+  
+  * 2.5 As a user if there are more than six recipes on the page, the page is paginated with six recipes per page.
+
+    ![Desktop](static/images/pagination.png)
+
+    Result: Pass
+
+3. Recipe post detail page.
+
+  * 3.1 I want to be able to edit or delete a recipe post for which I am the author.
+
+    (i)![Desktop](static/images/postdetail-edit.png)
+    (ii)![Desktop](static/images/edit-page.png)
+
+    Result: Pass
+
+  * 3.2 As a user, I want to be able to comment on a recipe post
+
+    (i)![Desktop](static/images/leave-comment.png)
+    (ii)![Desktop](static/images/await-approval.png)
+
+    Result: Pass
+
+  * 3.3 As a user, I want to be able to like and unlike a recipe post.
+
+    (i)![Desktop](static/images/like-post.png)
+
+    Result: Pass
+
+  * 3.4 As a user who has not registered or logged into the website, I cannot add a comment to a recipe post.
+
+    (i)![Desktop](static/images/user-notsignedin.png)
+    (ii)![Desktop](static/images/no-commentbox.png)
+
+4. Random Recipe page
+
+  * 4.1 As a user, I want quick and easy inspiration for cooking ideas without browsing through a large number of recipes.
+
+    (i)![Desktop](static/images/randomrecipe-1.png)
+    (ii)![Desktop](static/images/randomerecipe-2.png)
+
+    Result: Pass
 
 ## Validator Testing
 
