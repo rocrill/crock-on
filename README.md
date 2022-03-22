@@ -307,9 +307,9 @@ sqlparse==0.4.2 (Non-validating SQL parser for Python)
 * [Gitpod](https://gitpod.io/account) - to write the code and push it to GitHub.
 * [Github Pages](https://pages.github.com/) - to deploy the site.
 * [Unsplash](https://unsplash.com/) - for images.
-* [Bootstrap](https://unsplash.com/) - for images.
-* [Postgres](https://unsplash.com/) - for images.
-* [SQL lite](https://unsplash.com/) - for images.
+* [Bootstrap]
+* [Postgres]
+* [SQL lite]
 
 
 # Deployment
