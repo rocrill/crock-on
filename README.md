@@ -246,7 +246,6 @@ Feature 8. Register/Log in and Log out pages:
 
 Feature 9. Admin
 
-
   * These three pages have a similar layout. The function is in the centre of the page.
 ....
 
@@ -505,6 +504,79 @@ Feature User Story testing:
     (ii)![Desktop](static/images/randomerecipe-2.png)
 
     Result: Pass
+
+5. About page
+
+  * 5.1 As a user I can read about the background to and idea behind the website so that I understand the website style and purpose.
+
+    ![Desktop](static/images/about-page.png)
+
+6. Footer
+
+  * 6.1 As a user, I can easily access the blog site's social media pages which open in new tabs so that I can stay updated on blog news and updates.
+
+    ![Desktop](static/images/footer.png)
+
+7. Share Recipe page
+
+  * 7.1 As a user, I can create a recipe post from the front end of the site so that I can easily post a recipe without having to access the back-end of the site.
+
+    (ii)![Desktop](static/images/post-page.png)
+    (iii)![Desktop](static/images/post-conf.png)
+
+8. Register/Log in and Log out pages:
+
+  * 8.1 As a user I can log in to the site via the log in page so that I can use the site and all features available to an authenticated user:
+
+    (i)![Desktop](static/images/login-page.png)
+    (ii)![Desktop](static/images/register-3.png)
+
+    Result: Pass 
+
+  * 8.2 As a first time user I can register and sign up to the site via the register page so that I can use the site and all features available to an authenticated user:
+
+   (i)![Desktop](static/images/register-2.png)
+   (ii)![Desktop](static/images/register-3.png)
+
+  * 8.3 As a user I can log out of the site when logged in so that I can securely end my session on the site.
+
+    (i)![Desktop](static/images/signout-page.png)
+    (ii)![Desktop](static/images/signout-confirmation.png)
+
+9. Admin
+
+  * 9.1 As an admin user, I can view all user draft posts in date order so that all posts can be reviewed for quality and appropriateness.
+
+    ![Desktop](static/images/admin-postlist.png)
+
+  * 9.1 As an admin user, I can edit and publish all user draft posts so that all posts can be reviewed for quality and appropriateness. 
+
+    ![Desktop](static/images/admin-editpost.png)
+    ![Desktop](static/images/admin-publish.png)
+
+  * 9.1 As an admin user, I can view and approve all user comments so that all commets can be reviewed for appropriateness.
+
+   ![Desktop](static/images/admin-comment1.png)
+   ![Desktop](static/images/admin-comment2.png)
+
+  * 9.2 As an admin user, I can view all comments in date order, along with the name of the recipe post that they correspond to and the username of the commenter, so that I can easily view an organised list of comments.
+
+   ![Desktop](static/images/comment-list.png)
+
+  * 9.3 As an admin user, I filter all posts by status and time of creation so that I can easily filter to view the posts that I need to access.
+
+    ![Desktop](static/images/admin-filterposts.png)
+
+  * 9.4 As an admin user I can delete posts so that I can remove old/unpublished posts form the database.
+
+    ![Desktop](static/images/admin-deleteposts.png)
+    ![Desktop](static/images/admin-deleteposts2.png)
+
+  * 9.5 As an admin user I can create a new post via the admin page so that I can post directly to the site without having to access the frontend.
+
+    ![Desktop](static/images/admin-addpost1.png)
+    ![Desktop](static/images/admin-addpost2.png)
+
 
 ## Validator Testing
 
