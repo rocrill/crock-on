@@ -240,8 +240,9 @@ User stories relating to the Share Recipe page:
 
 Feature 8. Register/Log in and Log out pages:
 
-  * These three pages have a similar layout. The function is in the centre of the page.
+  * These three pages have a similar layout. Each function is located in the centre of the page.
   * There is user validation when filling out the forms and upon signing out the user is asked if they are sure they would like to do so.
+  * Registration, signing in and logging out all result in a confirmation message of the action completed to the user.
 
   Desktop:
 
@@ -263,12 +264,15 @@ Feature 8. Register/Log in and Log out pages:
 
 Feature 9. Admin
 
-  * users
-  * comments
-  * posts
+  * A number of Admin views are configured at https://crock-on.herokuapp.com/admin, through which the below user stories can be carried out. Full CRUD operations to the data in the database are available as well as search and filter options. These include a Users lists, Posts and Comments.
 
-  ![Image of admin post list](assets/images/admin-posts.png)
+  Users:
   ![Image of admin user list](assets/images/admin-users.png)
+
+  Posts:
+  ![Image of admin post list](assets/images/admin-posts.png)
+
+  Comments:
   ![Image of admin comment list](assets/images/admin-comments.png) 
 
 User stories relating to Admin:
