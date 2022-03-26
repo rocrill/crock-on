@@ -109,6 +109,14 @@ Feature 1. Navigation bar
 
   * On mobile, the navigation menu links are within a collapsed drop down menu instead of in-line.
 
+  Desktop:
+
+  ![Image of desktop nav menu](assets/images/desktop-nav-menu.png)
+
+  Mobile:
+
+  ![Image of mobile nav menu](assets/images/mobile-nav-menu.png)
+  
 User stories relating to Navigation bar and footer:
 
   * 1.1 As a user the navigation bar is displayed with a logo on all pages with a search box on a desktop, tablet and mobile.
@@ -118,22 +126,20 @@ User stories relating to Navigation bar and footer:
   * 1.5 As a user I can click the ‘Share Recipe’ nav link which brings me to the recipe posting page where I am able to create a post.
   * 1.6 As a user I can click the ‘Random Recipe’ link which takes me to the page where a new random recipe is displayed each time I visit it.
   * 1.7 As a user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
-  
-  Desktop:
 
-  ![Image of desktop menu](.png)
-
-  Mobile:
-
-  ![Image of mobile menu](.png)
 
 Feature 2. Home page which contains the recipe list.
 
   * The recipe list is neat and well-proportioned. Each post clearly states the title, author name and no. of likes and comments received.
-  * The recipe of the day can be found underneath the main recipe list, and there is a 'Recipe of the day' link included in the nav bar, so that users who are interested in this feature can quickly redirect to the bottom of the page to find and use the generator without scrolling.
-  * Page is paginated.
+  * The home page is paginated so that when more than 6 recipes are published on the site, the second page appears for additional recipes.
 
-  general pics
+  Desktop:
+
+  ![Image of desktop home page](assets/images/home-post-list-images.png)
+
+  Mobile:
+
+  ![Image of mobile home page](assets/images/mobile-homepage.png)
 
 User stories relating to home page.
 
@@ -150,8 +156,13 @@ Feature 3. Recipe post detail page
   * Below the reecipe are user comments and the comment box will also appear here for authenticated logged in users. When a valid user submits a valid comment form, they receive a notification that their comment is awaiting approval. Once this is approved by admin the comment will appear under the post.
   * There is also a number of comments and number of likes displayed on the post detail page. 
 
+  Desktop:
+  ![Image of desktop post detail page 1](assets/images/post-detail1.png)
+  ![Image of desktop post detail page 2](assets/images/post-detail2.png)
 
-  general pics
+  Mobile:
+  ![Image of desktop post detail page 1](assets/images/detail-m1.png)
+  ![Image of desktop post detail page 2](assets/images/detail-m2.png)
 
 User stories relating to recipe post detail page:
 
@@ -164,18 +175,18 @@ Feature 4. Random Recipe page
 
   * The random recipe page is a page which generates a new random recipe each time the user visits it. It contains the recipe card as displayed on the home page, containing the recipe image, title, author name, number of likes and comments and posting date.
 
-User stories relating to recipe Random Recipe page:
-
-  * 4.1 As a user, I want quick and easy inspiration for cooking ideas without browsing through a large number of recipes.
-
   Desktop:
 
-  ![Image of the home page](.png)
+  ![Image of the desktop random page](assets/images/randomrecipe-1.png)
+  ![Image of the desktop random page 2](assets/images/randomrecipe-2.png)
 
   Mobile: 
 
-  ![Image of mobile home page](.png)
+  ![Image of the mobile random page](assets/images/randomrecipe-mobile.png)
 
+User stories relating to recipe Random Recipe page:
+
+  * 4.1 As a user, I want quick and easy inspiration for cooking ideas without browsing through a large number of recipes.
 
 Feature 5. About page
 
@@ -183,11 +194,15 @@ Feature 5. About page
   
   Desktop:
 
-  ![Image of About page](.png)
+  ![Image of the About page](assets/images/about-page.png)
 
   Mobile:
 
-  ![Image of mobile About page](.png)
+  ![Image of the mobile About page](assets/images/aboutpage-mobile.png)
+
+User stories relating to the About page:
+
+  * 5.1 As a user I can read about the background to and idea behind the website so that I understand the website style and purpose.
 
 Feature 6. Footer
 
@@ -199,29 +214,29 @@ Feature 6. Footer
 
   Desktop: 
 
-  ![Image of desktop footer](.png)
+ ![Image of the footer](assets/images/footer.png)
 
-  Mobile:
-
-  ![Image of mobile footer](.png)
-  
   User stories relating to the footer:
 
   * 6.1 As a user, I can access the blog site's social media pages which open in new tabs so that I can stay updated on blog news and updates.
-
 
 Feature 7. Share Recipe page
 
   * This is minimal, with the form located in the centre of the page.
   * The recipe posting form has the option for the user to attach their own recipe image, along with a title, unique slug and recipe content.
+  * Django Summernote enables the user to format their recipe post, e.g. be adding bullet points or bold headings when creating their content.
 
   Desktop:
 
-  ![Image of Desktop Recipe post page](assets/images/.png)
+  ![Image of desktop Recipe post page](assets/images/recipepost-desktop.png)
 
   Mobile:
 
-  ![Image of Mobile Recipe post page](assets/images/.png)
+  ![Image of mobile Recipe post page](assets/images/recipepost-mobile.png)
+
+User stories relating to the Share Recipe page:
+
+ * 7.1 As a user, I can create a recipe post from the front end of the site so that I can easily post a recipe without having to access the back-end of the site.
 
 Feature 8. Register/Log in and Log out pages:
 
@@ -242,17 +257,29 @@ Feature 8. Register/Log in and Log out pages:
 
  User stories relating to Register/Log in and Log out pages:
 
-  * 
+  * 8.1 As a user I can log in to the site via the log in page so that I can use the site and all features available to an authenticated user:
+  * 8.2 As a first time user I can register and sign up to the site via the register page so that I can use the site and all features available to an authenticated user:
+  * 8.3 As a user I can log out of the site when logged in so that I can securely end my session on the site.
 
 Feature 9. Admin
 
-  * These three pages have a similar layout. The function is in the centre of the page.
-....
+  * users
+  * comments
+  * posts
+
+  ![Image of admin post list](assets/images/admin-posts.png)
+  ![Image of admin user list](assets/images/admin-users.png)
+  ![Image of admin comment list](assets/images/admin-comments.png) 
 
 User stories relating to Admin:
 
-  * These three pages have a similar layout. The function is in the centre of the page.
-
+  * 9.1 As an admin user, I can view all user draft posts in date order so that all posts can be reviewed for quality and appropriateness.
+  * 9.2 As an admin user, I can edit and publish all user draft posts so that all posts can be reviewed for quality and appropriateness. 
+  * 9.3 As an admin user, I can view and approve all user comments so that all commets can be reviewed for appropriateness.
+  * 9.4 As an admin user, I can view all comments in date order, along with the name of the recipe post that they correspond to and the username of the commenter, so that I can easily view an organised list of comments.
+  * 9.5 As an admin user, I filter all posts by status and time of creation so that I can easily filter to view the posts that I need to access.
+  * 9.6 As an admin user I can delete posts so that I can remove old/unpublished posts form the database.
+  * 9.7 As an admin user I can create a new post via the admin page so that I can post directly to the site without having to access the frontend.
 
 ### Features To be Implemented in Future:
 
@@ -496,6 +523,8 @@ Feature User Story testing:
     (i)![Desktop](static/images/user-notsignedin.png)
     (ii)![Desktop](static/images/no-commentbox.png)
 
+    Result: Pass
+
 4. Random Recipe page
 
   * 4.1 As a user, I want quick and easy inspiration for cooking ideas without browsing through a large number of recipes.
@@ -511,11 +540,15 @@ Feature User Story testing:
 
     ![Desktop](static/images/about-page.png)
 
+    Result: Pass
+
 6. Footer
 
   * 6.1 As a user, I can easily access the blog site's social media pages which open in new tabs so that I can stay updated on blog news and updates.
 
     ![Desktop](static/images/footer.png)
+
+    Result: Pass
 
 7. Share Recipe page
 
@@ -523,6 +556,8 @@ Feature User Story testing:
 
     (ii)![Desktop](static/images/post-page.png)
     (iii)![Desktop](static/images/post-conf.png)
+
+    Result: Pass
 
 8. Register/Log in and Log out pages:
 
@@ -538,10 +573,14 @@ Feature User Story testing:
    (i)![Desktop](static/images/register-2.png)
    (ii)![Desktop](static/images/register-3.png)
 
+   Result: Pass
+
   * 8.3 As a user I can log out of the site when logged in so that I can securely end my session on the site.
 
     (i)![Desktop](static/images/signout-page.png)
     (ii)![Desktop](static/images/signout-confirmation.png)
+
+     Result: Pass
 
 9. Admin
 
@@ -549,34 +588,47 @@ Feature User Story testing:
 
     ![Desktop](static/images/admin-postlist.png)
 
-  * 9.1 As an admin user, I can edit and publish all user draft posts so that all posts can be reviewed for quality and appropriateness. 
+    Result: Pass
+
+  * 9.2 As an admin user, I can edit and publish all user draft posts so that all posts can be reviewed for quality and appropriateness. 
 
     ![Desktop](static/images/admin-editpost.png)
     ![Desktop](static/images/admin-publish.png)
 
-  * 9.1 As an admin user, I can view and approve all user comments so that all commets can be reviewed for appropriateness.
+    Result: Pass
+
+  * 9.3 As an admin user, I can view and approve all user comments so that all commets can be reviewed for appropriateness.
 
    ![Desktop](static/images/admin-comment1.png)
    ![Desktop](static/images/admin-comment2.png)
 
-  * 9.2 As an admin user, I can view all comments in date order, along with the name of the recipe post that they correspond to and the username of the commenter, so that I can easily view an organised list of comments.
+    Result: Pass
+
+  * 9.4 As an admin user, I can view all comments in date order, along with the name of the recipe post that they correspond to and the username of the commenter, so that I can easily view an organised list of comments.
 
    ![Desktop](static/images/comment-list.png)
 
-  * 9.3 As an admin user, I filter all posts by status and time of creation so that I can easily filter to view the posts that I need to access.
+    Result: Pass
+
+  * 9.5 As an admin user, I filter all posts by status and time of creation so that I can easily filter to view the posts that I need to access.
 
     ![Desktop](static/images/admin-filterposts.png)
 
-  * 9.4 As an admin user I can delete posts so that I can remove old/unpublished posts form the database.
+    Result: Pass
+
+  * 9.6 As an admin user I can delete posts so that I can remove old/unpublished posts form the database.
 
     ![Desktop](static/images/admin-deleteposts.png)
     ![Desktop](static/images/admin-deleteposts2.png)
 
-  * 9.5 As an admin user I can create a new post via the admin page so that I can post directly to the site without having to access the frontend.
+    Result: Pass
+
+  * 9.7 As an admin user I can create a new post via the admin page so that I can post directly to the site without having to access the frontend.
 
     ![Desktop](static/images/admin-addpost1.png)
     ![Desktop](static/images/admin-addpost2.png)
 
+    Result: Pass
 
 ## Validator Testing
 
