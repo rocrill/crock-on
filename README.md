@@ -327,7 +327,6 @@ sqlparse==0.4.2 (Non-validating SQL parser for Python)
 * [Google Fonts](https://fonts.google.com/) - to import the 'Kaisei HarunoUmi' and 'Sans Serif' fonts into the HTML file, which were then used throughout the site.
 * [Font Awesome](https://fontawesome.com/) - for icons which were added to some headings throughout the site for aesthetics.
 * [Coolors](https://coolors.co/) - for an appropriate and attractive colour palette.
-* [Tinypng](https://tinypng.com/) - to resize images.
 * [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - to inspect and debug the code through all stages of the development.
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse) - to check the site for performance, accessibility and best practices.
 * [Am I Responsive](http://ami.responsivedesign.is/) - to produce a preview of the site on different devices.
@@ -340,7 +339,6 @@ sqlparse==0.4.2 (Non-validating SQL parser for Python)
 * [Bootstrap]
 * [Postgres]
 * [SQL lite]
-
 
 # Deployment
 
@@ -360,55 +358,6 @@ When I was editing for responsiveness I tested the site on several different dev
 At the final stages of the project the W3C Markup Validator,W3C CSS Validator Services, along with PEP8 and JSHint were used to validate every page of the project to ensure there were no syntax errors.
 
 ## Testing User Stories 
-
-General:
-
-* First time visitor goals:
-
-  * As a First Time Visitor, ...
-
-    Test result: Pass
-
-    Explanation...
-
-    ![Image for test 1](.png)
-
-* Returning Visitor Goals
-
-  * As a Returning Visitor, I want to ...
-
-    Test result: Pass
-
-    Explanation
-
-    ![Image for test 4](.png)
-
-  * As a Returning Visitor, I want ...
-
-    Test result: Pass
-
-    Explanation
-
-    ![Image for test 5](assets/images/test5.png)
-
-
-* Frequent User Goals
-
-  * As a Frequent User, I want to ...
-
-    Test result: Pass.
-
-    Explanation...
-
-    ![Image for test 7](assets/images/test7.png)
-
-* Site Owner Goals
-
-  * As a site owner, I want ...
-
-    Test result: Pass.
-
-    Explanation
 
 Feature User Story testing:
 
@@ -701,10 +650,27 @@ Icons taken from [Font Awesome](https://fontawesome.com/).
 
 ## Images
 
-Images were sourced from Unsplash:
+Images were mostly sourced from Unsplash and Pexels, and some from recipe sites:
 
-Image by .... on [Unsplash](https://unsplash.com/photos/NqeB4q6KOFg)
+Halloumi salad image by Anastasia Belousova on [Unsplash](https://www.pexels.com/photo/sliced-vegetables-on-white-ceramic-plate-10267339/)
 
+Avocado toast image by Daria Shevtsova on [Pexels](https://www.pexels.com/photo/photograpy-of-dressed-food-704571/)
+
+Tacos image by Gonzalo Mendiola on [Pexels](https://unsplash.com/photos/dzn37nOmki4)
+
+Chicken wings image by Chad Montano on [Unsplash](https://unsplash.com/photos/gE28aTnlqJA)
+
+Egg Shakshuka image by Jess Kosar on [Unsplash](https://unsplash.com/photos/rzPVSqQjjqs)
+
+Eggs Benedict image by Pesce Huang on [Unsplash](https://unsplash.com/photos/UTVXrzoMQgU)
+
+Carrot soup image by Cala on [Unsplash](https://unsplash.com/photos/w6ftFbPCs9I)
+
+Goat's Cheese Omelette image from [Sainsburys](https://recipes.sainsburys.co.uk/recipes/omelette-with-a-goats-cheese-twist)
+
+Pancakes image from [Tesco](https://realfood.tesco.com/recipes/pink-ombre-pancakes.html)
+
+Taco Recipe from [Supervalu](https://supervalu.ie/recipes/minced-beef-tacos?ref=meal_planner)
 
 # Acknowledgements
 
