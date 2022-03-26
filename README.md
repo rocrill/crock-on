@@ -669,8 +669,6 @@ Home page:
 ![Image for Home lighthouse result](assets/images/home-lighthouse.png)
 
 
-
-
 ## Further Testing
 
 * Devices and browsers :
@@ -698,11 +696,27 @@ Home page:
 
 ## Code
 
-The Code Institute LMS content, including the Django blog walthrough project, as well as some posts on Stackoverflow were used to create this site. All code taken from these resources has been adapted to suit the needs of this site, except for the specific cases referenced below.
+The Code Institute LMS content, including the Django blog walkthrough project, as well as some posts on Stackoverflow were used to create this site. All code taken from these resources has been adapted to suit the needs of this site, except for the specific cases referenced below.
 
-This [Stack Overflow](https://stackoverflow.com/questions/26744659/center-an-button-with-respect-to-an-image-css) article was used to ...
+This [Bootstrap](https://getbootstrap.com/docs/5.1/components/navbar/) article and this [YouTube](https://www.youtube.com/watch?v=AGtae4L5BbI) video were used to add a search bar within the navigation bar.
 
-Icons taken from [Font Awesome](https://fontawesome.com/).
+This [YouTube](https://www.youtube.com/watch?v=-s7e_Fy6NRU&t=1687s&ab_channel=CoreySchafer) video was used to create, update and delete posts on the front end of the website.
+
+This [YouTube](https://www.youtube.com/watch?v=ygzGr51dbsY&ab_channel=Codemy.com) video and this [Alphacoder](https://alphacoder.xyz/image-upload-with-django-and-cloudinary/) article were used to add an image upload field to the Share Recipe post form on the front end of the site. 
+
+This [YouTube](https://www.youtube.com/watch?v=J7xaESAddDQ&ab_channel=Codemy.com) video was used when building out the view to update a recipe post from the front end of the site.
+
+This [YouTube](https://www.youtube.com/watch?v=8NPOwmtupiI&ab_channel=Codemy.com) video was used when building out the view to delete a recipe post from the front end of the site.
+
+This [Stackoverflow](https://stackoverflow.com/questions/15045101/how-to-get-more-than-one-field-with-django-filter-icontains) article was used when building out the search feature of the site.
+
+This [CSS Tricks](https://css-tricks.com/snippets/javascript/get-url-and-url-parts-in-javascript/) article and this [Stackoverflow](https://stackoverflow.com/questions/195951/how-can-i-change-an-elements-class-with-javascript) article were used to apply styling to active nav links on the site.
+
+This [Stackoverflow](https://stackoverflow.com/questions/22816704/django-get-a-random-object) article was used when creating the 'Random Recipe' feature of the site.
+
+This [Github](https://github.com/summernote/django-summernote) documentation was used when adding Django Summernnote to the front-end Share Recipe page for users to format their posts. 
+
+Icons were taken from [Font Awesome](https://fontawesome.com/).
 
 ## Images
 
