@@ -127,7 +127,6 @@ User stories relating to Navigation bar and footer:
   * 1.6 As a user I can click the ‘Random Recipe’ link which takes me to the page where a new random recipe is displayed each time I visit it.
   * 1.7 As a user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
 
-
 Feature 2. Home page which contains the recipe list.
 
   * The recipe list is neat and well-proportioned. Each post clearly states the title, author name and no. of likes and comments received.
@@ -358,6 +357,63 @@ When I was editing for responsiveness I tested the site on several different dev
 At the final stages of the project the W3C Markup Validator,W3C CSS Validator Services, along with PEP8 and JSHint were used to validate every page of the project to ensure there were no syntax errors.
 
 ## Testing User Stories 
+
+* First Time Visitor Goals
+
+  * As a First Time Visitor, I want to easily understand the main purpose of the site.
+  * As a First Time Visitor, I want to easily find basic information about the blog and its purpose.
+
+  Result: Pass
+
+  The 'About' section of the site clearly outlines the idea behind the site's purpose and the features available.
+
+  * As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+
+  Result: Pass
+
+  The navigation bar is consistent across the site, the nav link titles are clear and intuitively ordered, e.g. the login/logout link placement on the right hand side.
+ 
+* Returning Visitor Goals
+
+  * As a Returning Visitor, I want to easily access recipes and share content.
+
+  Result: Pass
+
+  Recipes are located on the home page and the 'Share Recipe' page is clearly named in the nav bar for logged in users who wish to share content.
+
+  * As a Returning Visitor, I also want to locate the business's social media links to keep up to date with blog news and announcements.
+
+  Result: Pass
+
+  These can be found and accessed via the website footer.
+  
+* Frequent User Goals
+
+  * As a Frequent User, I want to be able to access the site easily from any device, even if I am on the go.
+
+  Result: Pass
+
+  The site is fully responsive and optimised for mobile as well as dektop devices.
+
+* Site Owner Goals
+
+  * As a site owner, I want to create an attractive and well-designed site that elicits a positive emotional response in users so that they remain on and navigate througout the site to achieve their goals.
+
+  Result: Pass
+
+  The color scheme, design and images were chosen to create an attractive site that will interest users in searching through the recipes and site pages. 
+
+  * As a site owner, I want maintain a safe and secure site where only registered users can share content and comment on other's posts, and where all posts are monitored for quality, and comments for inappropriate content.
+
+  Result: Pass
+
+  Users are authenticated before they can share content, or comment on and like posts. This is tested in more detail in the feature-specific user stories below. All posts are also approved by the site admin team before being published to ensure that the site content is safe for all users.
+
+  *  As a site owner, I want to have clear social media links displayed on the site which may lead to an increased following on channels to help with my blog's visibility.
+
+  Result: Pass
+
+  These are clearly located in the website footer.
 
 Feature User Story testing:
 
