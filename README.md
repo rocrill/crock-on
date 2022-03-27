@@ -69,8 +69,28 @@ For consistency of user experience, the site logo, navigation links and footer r
 
 Mock-ups were made using Balsamiq to help plan and visualise the site design. They were created for 2 main screen sizes: desktop and mobile.
 
+Desktop:
+
 - [Wireframes](docs/wireframes/home-desktop.pdf): Desktop 'Home' page.
-- 
+- [Wireframes](docs/wireframes/about-desktop.pdf): Desktop 'About' page.
+- [Wireframes](docs/wireframes/postdetail-desktop.pdf): Desktop post detail page.
+- [Wireframes](docs/wireframes/randomrecipe-desktop.pdf): Desktop 'Random Recipe' page.
+- [Wireframes](docs/wireframes/sharerecipe-desktop.pdf): Desktop 'Share Recipe' page.
+- [Wireframes](docs/wireframes/searchpage-desktop.pdf): Desktop 'Search' page.
+- [Wireframes](docs/wireframes/register-desktop.pdf): Desktop 'Register' page.
+- [Wireframes](docs/wireframes/login-desktop.pdf): Desktop 'Sign in' page.
+- [Wireframes](docs/wireframes/signout-desktop.pdf): Desktop 'Sign out' page.
+
+Mobile:
+
+- [Wireframes](docs/wireframes/mobile-home-nav-dropdown.pdf): Mobile 'Home' page.
+- [Wireframes](docs/wireframes/mobile-about.pdf): Mobile 'About' page.
+- [Wireframes](docs/wireframes/postdetail-mobile.pdf): Mobile post detail page.
+- [Wireframes](docs/wireframes/randomrecipe-mobile.pdf): Mobile 'Random Recipe' page.
+- [Wireframes](docs/wireframes/sharerecipe-mobile.pdf): Mobile 'Share Recipe' page.
+- [Wireframes](docs/wireframes/register-mobile.pdf): Mobile 'Register' page.
+- [Wireframes](docs/wireframes/login-mobile.pdf): Mobile 'Sign in' page.
+- [Wireframes](docs/wireframes/signout-mobile.pdf): Mobile 'Sign out' page.
 
 
 ### Design:
