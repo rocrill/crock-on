@@ -6,7 +6,9 @@
 
 Crock-on is a recipe sharing blog website. It aims to provide users with easy recipe ideas that their fellow amateur cooks have shared. It aims to be accessible to every level of cook, and also to serve as a place where people can share their own recipes and interact with other cook's recipes without having to go through the motions of setting up their own cookery blog. 
 
-## User Experience (UX)
+# User Experience (UX)
+
+## Strategy
 
 ### Project Goals
 
@@ -24,32 +26,9 @@ Crock-on is a recipe sharing blog website. It aims to provide users with easy re
 
 * Cooks who want to share their recipe ideas without having to commit to their own personal cookery blog, and anyone looking for recipe ideas that are accessible as they have been created by other amateur cooks.
 
-### User Stories
+## Structure
 
-* First Time Visitor Goals
-
-  * As a First Time Visitor, I want to easily understand the main purpose of the site.
-  * As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-  * As a First Time Visitor, I want to easily find basic information about the blog and its purpose.
- 
-* Returning Visitor Goals
-
-  * As a Returning Visitor, I want to easily access recipes and share content.
-  * As a Returning Visitor, I also want to locate the business's social media links to...
-  
-* Frequent User Goals
-
-  * As a Frequent User, I want to be able to access the site easily from any device, even if I am on the go.
-
-* Site Owner Goals
-
-  * As a site owner, I want to create an attractive and well-designed site that elicits a positive emotional response in users so that they remain on and navigate througout the site to achieve their goals.
-  * As a site owner, I want maintain a safe and secure site where only registered users can share content and comment on other's posts, and where all posts are monitored for quality, and comments for inappropriate content.
-  *  As a site owner, I want to have clear social media links displayed on the site which may lead to an increased following on channels to help with my blog's visibility.
-
-More specific user stories are discussed in the context of website features in the Features section below.
-
-### Structure:
+### Website pages:
 
 The site has 4 pages: 
 
@@ -65,9 +44,66 @@ The site has 4 pages:
 
 For consistency of user experience, the site logo, navigation links and footer remain consitent throughout the site.
 
-### Wireframes:
+### Database
 
-Mock-ups were made using Balsamiq to help plan and visualise the site design. They were created for 2 main screen sizes: desktop and mobile.
+* The website uses HTML, Javascript and CSS used with the Bootstrap framework for the frontend.
+* The backend was created using Python, built within the Django framework and uses the Postgres database for the deployed Heroku version.
+* A SQLLite database was used for local development.
+
+**Physical database model**
+
+[This model contains all fields stored in the database collections with their data type and mimics the structure of what is actually stored in the Postgres database]
+
+![Database](static/images/pp4-datamodel-png.png)
+
+**Models**
+
+* Post model
+
+  * The Post model 
+
+
+* Comment model 
+
+
+* User model
+
+The User model contains information about the user. It is part of the Django allauth library
+
+The model contains the following fields: username, password, first_name, last_name, email, is_staff, is_active, is_superuser, last_login, date_joined
+
+
+
+## Scope
+
+* First Time Visitor Goals
+
+  * As a First Time Visitor, I want to easily understand the main purpose of the site.
+  * As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+  * As a First Time Visitor, I want to easily find basic information about the blog and its purpose.
+ 
+* Returning Visitor Goals
+
+  * As a Returning Visitor, I want to easily access recipes and share content.
+  * As a Returning Visitor, I also want to locate the business's social media links to stay up to date with announcements and news.
+  
+* Frequent User Goals
+
+  * As a Frequent User, I want to be able to access the site easily from any device, even if I am on the go.
+
+* Site Owner Goals
+
+  * As a site owner, I want to create an attractive and well-designed site that elicits a positive emotional response in users so that they remain on and navigate througout the site to achieve their goals.
+  * As a site owner, I want maintain a safe and secure site where only registered users can share content and comment on other's posts, and where all posts are monitored for quality, and comments for inappropriate content.
+  *  As a site owner, I want to have clear social media links displayed on the site which may lead to an increased following on channels to help with my blog's visibility.
+
+More specific user stories are discussed in the context of website features in the Features section below.
+
+## Skeleton:
+
+### Wireframes
+
+Wireframe mock-ups were made using Balsamiq to help plan and visualise the site design. They were created for 2 main screen sizes: desktop and mobile.
 
 Desktop:
 
@@ -92,6 +128,8 @@ Mobile:
 - [Wireframes](docs/wireframes/login-mobile.pdf): Mobile 'Sign in' page.
 - [Wireframes](docs/wireframes/signout-mobile.pdf): Mobile 'Sign out' page.
 
+
+## Surface
 
 ### Design:
 
