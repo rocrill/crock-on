@@ -133,11 +133,11 @@ Feature 1. Navigation bar
 
   Desktop:
 
-  ![Image of desktop nav menu](assets/images/desktop-nav-menu.png)
+  ![Image of desktop nav menu](static/images/desktop-nav-menu.png)
 
   Mobile:
 
-  ![Image of mobile nav menu](assets/images/mobile-nav-menu.png)
+  ![Image of mobile nav menu](static/images/mobile-nav-menu.png)
   
 User stories relating to Navigation bar and footer:
 
@@ -156,11 +156,11 @@ Feature 2. Home page which contains the recipe list.
 
   Desktop:
 
-  ![Image of desktop home page](assets/images/home-post-list-images.png)
+  ![Image of desktop home page](static/images/home-post-list-images.png)
 
   Mobile:
 
-  ![Image of mobile home page](assets/images/mobile-homepage.png)
+  ![Image of mobile home page](static/images/mobile-homepage.png)
 
 User stories relating to home page.
 
@@ -178,12 +178,12 @@ Feature 3. Recipe post detail page
   * There is also a number of comments and number of likes displayed on the post detail page. 
 
   Desktop:
-  ![Image of desktop post detail page 1](assets/images/post-detail1.png)
-  ![Image of desktop post detail page 2](assets/images/post-detail2.png)
+  ![Image of desktop post detail page 1](static/images/post-detail1.png)
+  ![Image of desktop post detail page 2](static/images/post-detail2.png)
 
   Mobile:
-  ![Image of desktop post detail page 1](assets/images/detail-m1.png)
-  ![Image of desktop post detail page 2](assets/images/detail-m2.png)
+  ![Image of desktop post detail page 1](static/images/detail-m1.png)
+  ![Image of desktop post detail page 2](static/images/detail-m2.png)
 
 User stories relating to recipe post detail page:
 
@@ -198,12 +198,12 @@ Feature 4. Random Recipe page
 
   Desktop:
 
-  ![Image of the desktop random page](assets/images/randomrecipe-1.png)
-  ![Image of the desktop random page 2](assets/images/randomrecipe-2.png)
+  ![Image of the desktop random page](static/images/randomrecipe-1.png)
+  ![Image of the desktop random page 2](static/images/randomrecipe-2.png)
 
   Mobile: 
 
-  ![Image of the mobile random page](assets/images/randomrecipe-mobile.png)
+  ![Image of the mobile random page](static/images/randomrecipe-mobile.png)
 
 User stories relating to recipe Random Recipe page:
 
@@ -215,11 +215,11 @@ Feature 5. About page
   
   Desktop:
 
-  ![Image of the About page](assets/images/about-page.png)
+  ![Image of the About page](static/images/about-page.png)
 
   Mobile:
 
-  ![Image of the mobile About page](assets/images/aboutpage-mobile.png)
+  ![Image of the mobile About page](static/images/aboutpage-mobile.png)
 
 User stories relating to the About page:
 
@@ -235,7 +235,7 @@ Feature 6. Footer
 
   Desktop: 
 
- ![Image of the footer](assets/images/footer.png)
+ ![Image of the footer](static/images/footer.png)
 
   User stories relating to the footer:
 
@@ -249,11 +249,11 @@ Feature 7. Share Recipe page
 
   Desktop:
 
-  ![Image of desktop Recipe post page](assets/images/recipepost-desktop.png)
+  ![Image of desktop Recipe post page](static/images/recipepost-desktop.png)
 
   Mobile:
 
-  ![Image of mobile Recipe post page](assets/images/recipepost-mobile.png)
+  ![Image of mobile Recipe post page](static/images/recipepost-mobile.png)
 
 User stories relating to the Share Recipe page:
 
@@ -267,15 +267,15 @@ Feature 8. Register/Log in and Log out pages:
 
   Desktop:
 
-  ![Image of Desktop Login](assets/images/.png)
-  ![Image of Desktop Loout](assets/images/.png)
-  ![Image of Desktop Register](assets/images/.png)
+  ![Image of Desktop Login](static/images/.png)
+  ![Image of Desktop Loout](static/images/.png)
+  ![Image of Desktop Register](static/images/.png)
 
   Mobile:
 
-  ![Image of Mobile Login](assets/images/.png)
-  ![Image of Mobile Loout](assets/images/.png)
-  ![Image of Mobile Register](assets/images/.png)
+  ![Image of Mobile Login](static/images/.png)
+  ![Image of Mobile Loout](static/images/.png)
+  ![Image of Mobile Register](static/images/.png)
 
  User stories relating to Register/Log in and Log out pages:
 
@@ -288,13 +288,13 @@ Feature 9. Admin
   * A number of Admin views are configured at https://crock-on.herokuapp.com/admin, through which the below user stories can be carried out. Full CRUD operations to the data in the database are available as well as search and filter options. These include a Users lists, Posts and Comments.
 
   Users:
-  ![Image of admin user list](assets/images/admin-users.png)
+  ![Image of admin user list](static/images/admin-users.png)
 
   Posts:
-  ![Image of admin post list](assets/images/admin-posts.png)
+  ![Image of admin post list](static/images/admin-posts.png)
 
   Comments:
-  ![Image of admin comment list](assets/images/admin-comments.png) 
+  ![Image of admin comment list](static/images/admin-comments.png) 
 
 User stories relating to Admin:
 
