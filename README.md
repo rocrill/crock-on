@@ -401,11 +401,21 @@ sqlparse==0.4.2 (Non-validating SQL parser for Python)
 
 # Deployment
 
-## Deploying to GitHub Pages
+This site has been deployed on Heroku. The link is: https://crock-on.herokuapp.com/
 
-The site was developed in GitPod and ...
 
-* Navigate to the Github repository...
+## Cloudinary
+
+
+
+## Local Deployment
+
+
+
+## Heroku and Postgres
+
+
+
 
 
 # Testing
@@ -414,7 +424,7 @@ I tested the site regularly during the development process, by previewing it in 
 
 When I was editing for responsiveness I tested the site on several different devices.
 
-At the final stages of the project the W3C Markup Validator,W3C CSS Validator Services, along with PEP8 and JSHint were used to validate every page of the project to ensure there were no syntax errors.
+At the final stages of the project the W3C Markup Validator, W3C CSS Validator Services, along with PEP8 and JSHint were used to validate every page of the project to ensure there were no syntax errors.
 
 ## Testing User Stories 
 
