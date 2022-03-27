@@ -750,10 +750,11 @@ Home page:
   * Search feature: This was originally case sensitive, e.g. if a recipe was entitled 'Egg's Benedict', it would not appear in search results if a user searched 'egg' instead of 'Egg'. This was fixed by using `icontains` in the search view instead of `contains`.
   * The Random Recipe page was originally generating draft posts as random recipes as well as published posts. To address this, a filter was added to the `search_recipes` view so that only posts with published status would be shown in results.
   * Initially, when posts were created the user was directed to a 'success url' which contained a confirmation message that their post was submitted. However this message would remain everytime the user navigated back to the home page after posting. To address this, the method of redirecting to a success url after posting was replaced with adding a `messages.success` function call into the view `add_recipe` view. 
+  * Comment feature: Originally, when a user comment was submitted for approval, it came through to admin with the email field blank. In order for the admin user to approve the comment, they needed to input the users email address which was not autopopulated in the form. To address this, the Comment model was updated with `email = models.EmailField(blank=True)` so that the email was not required to be input by admin in order to approve the comment.
   
 * Known:
-  * Share recipe mobile view - no horizontal sroll here but editer box clear extends past mobile screen view. The idea of the site is that ...
-  
+  * When viewing the Share Recipe page on mobile view the Summernote text editing box exceeds the width of the mobile screen view. CSS was updated so that no horizontal scroll bar appears here, however the text box is clearly too wide for the view. The assumption is that users who post recipes will usually be posting on desktop however this issue would be addressed in the future development of the site. 
+  * On the Post Detail page the no. of likes and comments icons do not adjust neatly when the screen is reduced to a mobile view. This would be corrected in future development of the site.
 
 # Credits
 
