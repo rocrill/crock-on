@@ -52,27 +52,28 @@ For consistency of user experience, the site logo, navigation links and footer r
 
 **Physical database model**
 
-[This model contains all fields stored in the database collections with their data type and mimics the structure of what is actually stored in the Postgres database]
-
 ![Database](static/images/pp4-datamodel-png.png)
 
 **Models**
 
 * Post model
 
-  * The Post model 
-
+  * The Post model contians information about recipes posted to the website. 
+  * It contains author as a foreign-key for the users table.
+  * The model contains the following fields: title, slug, author, updated_on, content, featured_image, exerpt, created_on, status, and likes.
 
 * Comment model 
 
+  * The Comment model contains information about comments made on recipe posts.
+  * It contains post as a foreign key for the Post table.
+  * The model contains the following fields: post, name, email, body, created_on, approved. 
 
 * User model
 
-The User model contains information about the user. It is part of the Django allauth library
+  * The User model contains information about the user. It is part of the Django allauth library.
+  * The model contains the following fields: username, password, first_name, last_name, email, is_staff, is_active, is_superuser, last_login, date_joined.
 
-The model contains the following fields: username, password, first_name, last_name, email, is_staff, is_active, is_superuser, last_login, date_joined
-
-
+The rest of the models were created automatically as part of a basic Django blog project. Their fields and relationships to the above models are illustrated in the above diagram. 
 
 ## Scope
 
