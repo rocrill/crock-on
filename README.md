@@ -404,20 +404,72 @@ sqlparse==0.4.2 (Non-validating SQL parser for Python)
 
 This site has been deployed on Heroku. The link is: https://crock-on.herokuapp.com/
 
+## Deployment on Heroku
 
-## Cloudinary
+1. Create a new Heroku app:
 
+* Select 'create new app' under 'new'. Name the app and select a location.
+* Under the Heroku Resources tab, search the database, e.g. Heroku Postgres, and add it to Resources.
+* Navigate to the settings tab of Heroku, click reveal Convig Vars and copy the DATABASE_URL value. 
 
+2. Attach the database:
 
-## Local Deployment
+* To attach the database, in Gitpod, create a new env.py file on the top level directory.
+* In env.py, import os library and set environment variables:
+  os.environ["DATABASE_URL"] = "Paste in Heroku DATABASE_URL Link"
+* Then add in a secret key:
+  os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
+* In Heroku.com, add the Secret Key to your Config Vars:
+  SECRET_KEY, “randomSecretKey”
 
+3. Prepare environment and settings.py file:
 
+* Update the settings.py file to import the env.py file. Add the SECRETKEY and DATABASE_URL file paths.
+* Save all files and make migrations in the terminal with `python3 manage.py migrate`.
 
-## Heroku and Postgres
+4. Get static and media files stored on Cloudinary:
 
+* Take Cloudinary url from the Cloudinary dashboard. 
+* Add the the Cloudinary url into the env.py file.
+* Update the Config Vars in Heroku with the Cloudinary url.
 
+In settings.py add the following sections:
+- Cloudinary to the 'INSTALLED_APPS' list
+- STATICFILE_STORAGE
+- STATICFILES_DIRS
+- STATIC_ROOT
+- MEDIA_URL
+- DEFAULT_FILE_STORAGE
+- TEMPLATES_DIR
+- Update DIRS in TEMPLATES with TEMPLATES_DIR
+- Update ALLOWED_HOSTS with ['crock-on.heroku.com', 'localhost']
 
+In Gitpod:
 
+* Create 3 new folders on the top level directory: media, static and templates.
+* Create a Procfile on the top level directory. 
+* Add 'web: gunicorn project-name.wsgi' to the Procfile.
+* Go to the Deploy tab on Heroku and connect to GitHub, then to the required repository. Click on Deploy Branch and wait for the build to load. When the build is complete, the app can be opened through Heroku.
+
+## Forking the Repository
+
+You can create a fork (copy) of the repository. This allows you to experiment with the code without affecting the original project.
+
+To fork the repository:
+
+* Log in to your GitHub account.
+* On GitHub, navigate to the repository you want to fork.
+* In the top right corner of the page, underneath your profile avatar, click Fork.
+* You should now have a copy of the original repository in your GitHub account.
+
+## Making a local clone
+
+You can clone your repository to create a local copy on your computer. Any changes made to the local copy will not affect the original project. To clone the crock-on project, follow the steps below:
+
+* Select the repository rocrill/crock-on. In the repository, click on Code button located above all the project files.
+* Under HTTPS, copy the link generated - https://github.com/rocrill/crock-on. Open the terminal you are using, e.g. Gitpod.
+* Change the current working directory to the location where you want the cloned directory created.
+* Type git clone and then paste the URL you copied earlier: git clone https://github.com/rocrill/crock-on. Press Enter to create your local clone.
 
 # Testing
 
