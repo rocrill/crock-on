@@ -1,19 +1,24 @@
+"""File to create view functions and classes to
+take web requests and return a web response."""
+
+
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from .models import Post
 from .forms import CommentForm, PostForm
 from django.http import HttpResponseRedirect
-from django.utils.text import slugify
-from django.urls import reverse_lazy
 from django.db.models import Q
 from django.contrib import messages
 
 
 def search_recipes(request):
+    """View for searching recipe posts for specific keywords."""
     if request.method == "POST":
         searched = request.POST['searched']
         recipes = Post.objects.filter(
-            Q(content__icontains=searched) | Q(title__icontains=searched) | Q(author__username__icontains=searched)).filter(status=1)
+            Q(content__icontains=searched) |
+            Q(title__icontains=searched) |
+            Q(author__username__icontains=searched)).filter(status=1)
 
         return render(request, 'search_recipes.html',
                       {'searched': searched,
@@ -23,6 +28,7 @@ def search_recipes(request):
 
 
 def add_recipe(request):
+    """View for creating recipe posts."""
     form = None
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES)
@@ -30,26 +36,33 @@ def add_recipe(request):
         if form.is_valid():
 
             form.save()
-            messages.success(request, "Thanks for submitting your recipe! This will be published as soon as we review it :)" )
-            return redirect ("home") 
+            messages.success(request,
+                             "Thanks for submitting your recipe!" +
+                             " This will be published as soon as" +
+                             " we review it :)")
+            return redirect("home")
     else:
         form = PostForm()
     return render(request, 'post_form.html', {'form': form})
 
 
 class PostList(generic.ListView):
+    """View for displaying recipe post list."""
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
     paginate_by = 6
 
+
 class RandomPostList(generic.ListView):
+    """View for displaying a random recipe post."""
     model = Post
     queryset = Post.objects.all().filter(status=1).order_by('?')
     template_name = "random_recipe.html"
 
-class PostDetail(View):
 
+class PostDetail(View):
+    """View for displaying recipe post detail page."""
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -101,8 +114,9 @@ class PostDetail(View):
             },
         )
 
-class PostLike(View):
 
+class PostLike(View):
+    """View to display number of likes on recipe posts."""
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 
@@ -113,7 +127,9 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
+
 class PostUpdateView(generic.UpdateView):
+    """View for updating recipe posts."""
     model = Post
     form_class = PostForm
     template_name = "update_post.html"
@@ -124,20 +140,26 @@ class PostUpdateView(generic.UpdateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        messages.success(self.request, "Thanks for your update! Your post will be re-published as soon as we review the changes :)" )
+        messages.success(self.request,
+                         "Thanks for your update!" +
+                         " Your post will be re-published" +
+                         " as soon as we review the changes :)")
         return reverse('home')
 
 
 class PostDeleteView(generic.DeleteView):
+    """View for deleting recipe posts."""
     model = Post
     template_name = "delete_post.html"
 
     def get(self, request, slug, *args, **kwargs):
         post = Post.objects.filter(slug=slug)
-        msg=f"You have deleted your '{ post[0].title }' recipe!"
+        msg = f"You have deleted your '{ post[0].title }' recipe!"
         post.delete()
         messages.success(self.request, msg)
         return HttpResponseRedirect(reverse('home'))
 
+
 class about(View):
+    """View for displaying the 'About' page."""
     template_name = "about.html"
