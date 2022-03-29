@@ -4,31 +4,7 @@ body {
     overflow-x:hidden;
 }
 
-.about_crockon {
-    font-family: 'Bungee Shade', cursive;
-    color:#CA054D;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.recipe-post-heading {
-    margin-top:30px;
-}
-
-.col-1 {
-    ;
-}
-
-.edit-heading {
-    margin-top: 30px;
-}
-.container-fluid{
-    background-color: #FFCC99;
-}
-
-.bg-white {
-    background-color: #fff;
-}
+/* Nav */
 
 .logo {
     font-family: 'Bungee Shade', cursive;
@@ -37,34 +13,78 @@ body {
     color: #CA054D;
 }    
 
-.btn-outline-success {
-    color: #CA054D;
-    border-color: #CA054D;
-    margin-right: 10px;
+a.nav-link {
+    color: #0E070C !important;
 }
 
-.btn-outline-success:hover {
+a.nav-link:hover {
+    color: #CA054D !important;
+}
+
+a.nav-link-active {
+    color: #CA054D !important;
+}
+
+/* Post list page */
+
+a {
+    text-decoration: none;
+    color:#CA054D;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
     background-color: #59B176;
     color:#fff;
 }
 
-.thin {
-    font-weight: 300;
+.author{
+    color:#0E070C;
 }
 
-.row {
-    padding-left: calc(var(--bs-gutter-x)/0.5);
-}
-
-.light-bg {
+.page-link {
     background-color: #fff;
+    color: #CA054D;
+    border-color: #CA054D;
+    transition: none;
 }
 
-.dark-bg {
-    background-color: #445261;
+.page-link:hover {
+    background-color: #59B176;
+    color: #fff;
+    border-color:#006400;
+    transition: none;
 }
 
-.main-bg {
+.post-link {
+    text-decoration: none;
+    font-family: 'Bungee Shade', cursive;
+    color: #0E070C;
+}
+
+.post-link:hover,
+.page-link {
+    color: #CA054D;
+}
+
+.author {
+    color: white;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.image-container {
+    position: relative;
+}
+
+.container-fluid {
     background-color: #FFCC99;
 }
 
@@ -72,84 +92,42 @@ body {
     margin-top: 30px;
 }
 
-.create_update_button {
-    margin-bottom: 20px;
-}
-
-p.author {
-    font-size: large;
-    color:#fff;
-}
-
-.author_edit {
-    margin-left:32px;
-}
-
-.author_edit > a {
-    color: #1E90FF !important;
-} 
-
-#random_recipe {
-    margin-top: 30px;
-    font-family: 'Bungee Shade', cursive;
-}
-
-.heading-font {
-    font-family: 'Bungee Shade', cursive;
-}
-
-.card {
-    border: none;
-    background-color: transparent;
-}
-
 .text-muted{
     color: #0E070C !important;
 }
 
-.card-body {
-    flex: 1 1 auto;
-    padding: 1rem 0.01rem;
+.text-secondary {
+    color:#0E070C !important;
+    margin-left: 5px !important;
 }
 
-.card-img-top { 
-    width: 135%; 
-    height: 20vw; 
-    object-fit: cover;
+.fa-heart:before {
+    margin-left: 10px;
 }
 
-.search_button {
-    background-color: #fff;
+/* About page */
+
+.main-bg {
+    background-color: #FFCC99;
+}
+
+.about_crockon {
+    font-family: 'Bungee Shade', cursive;
     color:#CA054D;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.low_posts {
-    margin-top: 60px;
+/* Recipe post details page. */
+
+.post-title {
+    margin-top: 20%;
+    margin-left: 5%;
 }
 
-/*
-.card-text {
-    flex: 1 1 auto;
-    padding: 1rem 0.01rem;
-} */
-
-.image-container {
-    position: relative;
-}
-
-/*
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #006400;
-} */
-
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
+.post-subtitle {
+    margin-left: 5%;
+    color: lightgray;
 }
 
 .masthead {
@@ -186,26 +164,48 @@ p.author {
     z-index: 100;
 }
 
-.post-link {
-    text-decoration: none;
-    font-family: 'Bungee Shade', cursive;
-    color: #0E070C;
+.card {
+    border: none;
+    background-color: transparent;
 }
 
-.post-link:hover,
-.page-link {
-    color: #CA054D;
+.recipe-post-heading {
+    margin-top:30px;
 }
 
-.post-title {
-    margin-top: 20%;
-    margin-left: 5%;
+.edit-heading {
+    margin-top: 30px;
 }
 
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
+p.author {
+    font-size: large;
+    color:#fff;
 }
+
+.author_edit {
+    margin-left:32px;
+}
+
+.author_edit > a {
+    color: #1E90FF !important;
+} 
+
+.row {
+    padding-left: calc(var(--bs-gutter-x)/0.5);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 0.01rem;
+}
+
+.card-img-top { 
+    width: 135%; 
+    height: 20vw; 
+    object-fit: cover;
+}
+
+/* Buttons */
 
 .btn-lg {
     background-color: #59B176;
@@ -245,30 +245,20 @@ p.author {
     border-color: #CA054D;
 }
 
-.page-link {
+.search_button {
     background-color: #fff;
+    color:#CA054D;
+}
+
+.btn-outline-success {
     color: #CA054D;
     border-color: #CA054D;
-    transition: none;
+    margin-right: 10px;
 }
 
-.page-link:hover {
+.btn-outline-success:hover {
     background-color: #59B176;
-    color: #fff;
-    border-color:#006400;
-    transition: none;
-}
-}
-
-.link {
-    color: #CA054D;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #CA054D;
-    text-decoration: underline;
+    color:#fff;
 }
 
 .btn-like {
@@ -284,7 +274,40 @@ p.author {
     border: none;
 }
 
-   /* footer */
+.btn-btn-outline-info {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+/* Share recipe page */
+
+.heading-font {
+    font-family: 'Bungee Shade', cursive;
+}
+
+.form-group {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* Update recipe page */
+
+.create_update_button {
+    margin-bottom: 20px;
+}
+
+/* Random Recipe page */
+
+#random_recipe {
+    margin-top: 30px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+.low_posts {
+    margin-top: 60px;
+}
+
+/* Footer */
 
 .dark-bg {
     background-color: #fff;
@@ -298,61 +321,8 @@ p.author {
     margin: 10px !important;
 }
 
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #59B176;
-    color:#fff;
-}
-
-.author{
-    color:#0E070C;
-    text-decoration: bold;
-}
-
-a {
-    text-decoration: none;
-    color:#CA054D;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a.nav-link {
-    color: #0E070C !important;
-}
-
-a.nav-link:hover {
-    color: #CA054D !important;
-}
-
-a.nav-link-active {
-    color: #CA054D !important;
-}
-
-.form-group {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.btn-btn-outline-info {
-    margin-left: 40px;
-    margin-top: 10px;
-}
-
-.text-secondary {
-    color:#0E070C !important;
-    margin-left: 5px !important;
-}
-
-.fa-heart:before {
-    margin-left: 10px;
-}
-
 .socials:hover {
     color:#59B176;
 }
+
 
