@@ -36,15 +36,15 @@
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text">
+                <div class="card-text">
                     {% if "placeholder" in post.featured_image.url %}
-                    <img src="/static/images/crockon-placeholder.jpg" width="100%" alt="Crock-on placeholder image.">
+                    <img src="/static/images/crockon-placeholder.jpg" width="100% /" alt="Crock-on placeholder image.">
                     {% else %}
                     <img src="{{ post.featured_image.url }}" alt="Uploaded recipe picture.">
                     {% endif %}
                     <br/><br/>
                     {{ post.content | safe }}
-                </p>
+                </div>
                 <div class="row">
 
                     <div class="col-1">
