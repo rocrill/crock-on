@@ -118,6 +118,10 @@ a:hover {
     margin-bottom: 40px;
 }
 
+.center {
+    text-align:center;
+}
+
 /* Recipe post details page. */
 
 .post-title {
