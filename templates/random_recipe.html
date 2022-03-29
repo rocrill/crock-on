@@ -17,9 +17,9 @@
                 <div class="image-container">
                     {% if "placeholder" in post_list.0.featured_image.url %}
                     <img class="card-img-top"
-                        src="static/images/carrot-soup.jpg">
+                        src="static/images/crockon-placeholder.jpg" alt="Crock-on placeholder image.">
                     {% else %}
-                    <img class="card-img-top" src=" {{ post_list.0.featured_image.url }}">
+                    <img class="card-img-top" src=" {{ post_list.0.featured_image.url }}" alt="Uploaded recipe picture">
                     {% endif %}
                     <div class="image-flash">
                         <p class="author">Author: {{ post_list.0.author }}</p>

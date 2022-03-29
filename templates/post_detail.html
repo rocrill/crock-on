@@ -20,9 +20,9 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="/static/images/crockon-placeholder.jpg" width="100%">
+                <img src="/static/images/crockon-placeholder.jpg" width="100%" alt="Crock-on placeholder image.">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%">
+                <img src=" {{ post.featured_image.url }}" width="100%" alt="Uploaded recipe picture.">
                 {% endif %}
             </div>
         </div>
@@ -38,9 +38,9 @@
                 <!-- Use the | safe filter inside the template tags -->
                 <p class="card-text">
                     {% if "placeholder" in post.featured_image.url %}
-                    <img src="/static/images/crockon-placeholder.jpg" width="100%">
+                    <img src="/static/images/crockon-placeholder.jpg" width="100%" alt="Crock-on placeholder image.">
                     {% else %}
-                    <img src="{{ post.featured_image.url }}">
+                    <img src="{{ post.featured_image.url }}" alt="Uploaded recipe picture.">
                     {% endif %}
                     <br/><br/>
                     {{ post.content | safe }}
