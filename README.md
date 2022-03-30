@@ -787,16 +787,35 @@ Feature User Story testing:
 
 I re-ran the deployed site through both the HTML and CSS validators and no warnings or errors were found:
 
-![Image for html validator result](assets/images/final-html-pass.png)
-![Image for css validator result](assets/images/css-validation-result.png)
+![Image for css validator result](static/images/css-validation-result.png)
+
+![Image for html validator result](static/images/html-validator-result.png)
+
+The source code for each website page was also run through the HTML validator separately and no errors were returned except for those relating to Summernote, as noted above.
 
 ## Lighthouse Testing
 
-The Lighthouse report from Google Chrome DevTools showed very good results for Performance, Accessibility, SEO and best practices of the site. 
+The Lighthouse report from Google Chrome DevTools showed good results for performance and accessibility of the site, particularly on desktop devices.
 
 Home page: 
+![Desktop](static/images/lhouse-home-desktop.png)
+![Mobile](static/images/lhouse-home-mobile.png)
 
-![Image for Home lighthouse result](assets/images/home-lighthouse.png)
+About page:
+![Desktop](static/images/lhouse-about-desktop.png)
+![Mobile](static/images/lhouse-about-mobile.png)
+
+Share recipe page:
+![Desktop](static/images/lhouse-share-desktop.png)
+![Mobile](static/images/lhouse-share-mobile.png)
+
+Random Recipe page:
+![Desktop](static/images/lhouse-random-desktop.png)
+![Mobile](static/images/lhouse-random-mobile.png)
+
+Post detail page:
+![Desktop](static/images/lhouse-detail-desktop.png)
+![Mobile](static/images/lhouse-detail-mobile.png)
 
 ## Further Testing
 
