@@ -2,7 +2,7 @@
 
 {% block content %}
 <!-- Search results page. -->
-<div class="search_recipe">
+<div class="search_recipe overflow-hidden">
     {% if searched %}
         {% if recipes|length < 1 %}
         <div class="heading-font">
@@ -22,6 +22,5 @@
             <h1>Oops, you forgot to search for a recipe!</h1>
         </div>
     {% endif %}
-   
 </div>
 {% endblock %}
