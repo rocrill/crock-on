@@ -123,6 +123,11 @@ a:hover {
     text-align:center;
 }
 
+.row {
+    padding-left: calc(var(--bs-gutter-x)/0.5);
+    padding-right: calc(var(--bs-gutter-x)/0.5);
+}
+
 /* Recipe post details page. */
 
 .post-title {
