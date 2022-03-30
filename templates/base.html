@@ -5,7 +5,6 @@
 
 <head>
     <title>Crock-on Recipe Blog</title>
-
     <link rel="preconnect" href="https://fonts.gstatic.com">   
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -16,17 +15,15 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
-
     <!-- Navigation -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid bg-white">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="logo">c<span class="logo">r</span>ock<span
-                        class="thin">|on</span></span></a>
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <span class="logo">c<span class="logo">r</span>ock<spanclass="thin">|on</span></span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,6 +39,7 @@
                     <li class="nav-item">
                         <a id="nav-link-randomrecipe" class="nav-link" aria-current="page" href="{% url 'random_recipe' %}">Random Recipe</a>
                     </li>
+                    <!-- Display certain functionality only if user is authenticated. -->
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a id="nav-link-sharerecipe" class="nav-link" href="{% url 'post-create' %}">Share Recipe</a>
@@ -51,22 +49,22 @@
                 
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-link-logout" href="{% url 'account_logout' %}">Logout</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-link-logout" href="{% url 'account_logout' %}">Logout</a>
+                    </li>
                 {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-link-login" href="{% url 'account_login' %}">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-link-signup" href="{% url 'account_signup' %}">Register</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-link-login" href="{% url 'account_login' %}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-link-signup" href="{% url 'account_signup' %}">Register</a>
+                    </li>
                 {% endif %}
                 </ul>
             </div>
         </div>
     </nav>
-
+    <!-- User confirmation messages. -->
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -76,24 +74,20 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 {% endfor %}
-
             </div>
         </div>
     </div>   
 
-
-
     <main class="flex-shrink-0 main-bg">
         {% block content %}
-        <!-- Content Goes here -->
+        <!-- Content goes here. -->
         {% endblock content %}
     </main>
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-white"> Copyright © 2022 Crock-on, Inc
-            </p>
-            <p></p>
+        <p class="m-0 text-center text-white"> Copyright © 2022 Crock-on, Inc </p>
+        <p></p>
         <p class="m-0 text-center text-white">
             <a href="https://www.facebook.com/" class="socials" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook-f"></i></a> 
             <a href="https://twitter.com/?lang=en" class="socials" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter ms-5"></i></a>
@@ -102,12 +96,15 @@
         </p>
     </footer>
     <script>
+        // Set timer for user confirmation messages to disappear.
         setTimeout(function() {
             let messages = document.getElementById("msg");
             let alert = new bootstrap.Alert(messages);
             alert.close();
         }, 5000);
-       
+
+        // Highlight active page with nav link text decoration. 
+
         if (window.location.pathname == '/about'){
             document.getElementById('nav-link-about').classList.add('nav-link-active');
         }
@@ -135,9 +132,7 @@
         if (window.location.pathname == '/post/new/'){
             document.getElementById('nav-link-sharerecipe').classList.add('nav-link-active');
         }
-
     </script>
-
 </body>
 
 </html>

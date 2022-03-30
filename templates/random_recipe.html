@@ -2,15 +2,15 @@
 
 {% block content %}
 
-
+<!-- Random recipe generation page. -->
 <div class="container-fluid">
     <div class="row">
-
+    
+    <!-- Condition to check if there is enough content to generate random recipes. -->
     {% if post_list|length > 2 %}
-
     <div class="col-md-4">
         <div id="random_recipe">
-        <h1>Random Recipe:</h1>  
+            <h1>Random Recipe:</h1>  
         </div> 
         <div class="card mb-4">
             <div class="card-body">
