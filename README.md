@@ -766,22 +766,29 @@ Feature User Story testing:
 
 * HTML Validator Errors & Warnings:
 
-  * Warning/Error:...
+  * Error: An `img` element must have an `alt` attribute, except under certain conditions.
+  * Fix: `alt` attributes added to all image elements.
 
-    Fix: ...
+  * Error: Stray end tag `span`.
+  * Fix: Stray end tag deleted.
 
+  * Warning: Consider adding a `lang` attribute to `html` start tag to declare the language of this document.
+  * Fix: `lang` attribute added to `html` start tag.
+
+  * Summernote errors: The 'Share recipe' and 'Update recipe' pages both result in the following errors due to the Django Summernote text editor. These errors cannot be fixed since they are caused by an external library:
+
+  ![Summernote Errors 1](static/images/summernote-errors1.png)
+  ![Summernote Errors 2](static/images/summernote-errors2.png)
 
 * CSS Validator Errors & Warnings
 
-  * Error:
+  * Error: 'Text decoration `bold` is not a `text-decoration` value'.
+  * Fix: Removed `text-decoration` from class as it was not needed in the end.
 
-  * Fix: 
-
-I re-ran the deployed site through both the HTML and CSS validators and no warnings or error were found:
+I re-ran the deployed site through both the HTML and CSS validators and no warnings or errors were found:
 
 ![Image for html validator result](assets/images/final-html-pass.png)
-![Image for css validator result](assets/images/final-css-pass.png)
-
+![Image for css validator result](assets/images/css-validation-result.png)
 
 ## Lighthouse Testing
 
@@ -790,7 +797,6 @@ The Lighthouse report from Google Chrome DevTools showed very good results for P
 Home page: 
 
 ![Image for Home lighthouse result](assets/images/home-lighthouse.png)
-
 
 ## Further Testing
 
@@ -817,7 +823,6 @@ Home page:
   * At first, when viewing the 'Share Recipe' page on mobile view, the Summernote text editing box exceeded the width of the mobile screen view which didn't look good on mobile devices. To fix this Django Summernote configuration settings were added to the Settings.py file to specify the width so tha the editor suits all screen sizes.
   
 * Known:
-  * errors
   * On the Post Detail page the no. of likes and comments icons do not adjust neatly when the screen is reduced to a mobile view. This would be corrected in future development of the site.
 
 # Credits
