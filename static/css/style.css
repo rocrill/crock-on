@@ -27,6 +27,17 @@ a.nav-link-active {
 
 /* Post list page */
 
+.row-home {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(var(--bs-gutter-y) * -1);
+        margin-right: calc(var(--bs-gutter-x)/ -2);
+        margin-left: 60px;
+    }
+
+
 a {
     text-decoration: none;
     color:#CA054D;
@@ -202,6 +213,7 @@ p.author {
 
 .row {
     padding-left: calc(var(--bs-gutter-x)/0.5);
+    padding-right: calc(var(--bs-gutter-x)/0.5);
 }
 
 .card-body {
@@ -335,4 +347,18 @@ p.author {
     color:#59B176;
 }
 
+/* Media query */
 
+@media screen and (max-width: 700px){
+
+.row-home {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+
+}
+}
