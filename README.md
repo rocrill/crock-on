@@ -69,7 +69,7 @@ Crock-on is a recipe sharing blog website. It aims to provide users with easy re
 
 ## Structure
 
-### Website pages:
+### Website pages
 
 The site has 4 pages: 
 
@@ -143,7 +143,7 @@ The rest of the models were created automatically as part of a basic Django blog
 
 More specific user stories are discussed in the context of website features in the Features section below.
 
-Note: Throughout the project, [Kanban board](https://github.com/rocrill/crock-on/projects/1) was used to organise and track the progress of the user story development, however the final user stories are documented fully within this Readme. 
+Note: Throughout the project, this [Kanban board](https://github.com/rocrill/crock-on/projects/1) was used to organise and track the progress of the user story development, however the final user stories are documented fully within this Readme. 
 
 ## Skeleton:
 
@@ -177,9 +177,7 @@ Mobile:
 
 ## Surface
 
-### Design:
-
-* Colour Scheme:
+### Colour Scheme
 
   The colour palette includes fun and complimenting colours. The palette was chosen using the [Coolors](https://coolors.co/) colour generator website.
 
@@ -191,13 +189,13 @@ Mobile:
 
   White was also used in different parts of the site to achieve the best possible contrast for user experience.
 
-* Typography:
+### Typography
 
   'Bungee Shade and Roboto Slab', taken from Google Fonts, are the main fonts used throughout the website with 'Sans Serif' as the fallback font. The Bungee Shade font is eye-catching and fun, and this is used for the blog logo and recipe titles. The Roboto Slab is clean, neat and more approriate for the smaller text used throughout the site.
 
-* Imagery:
+### Imagery
 
-  All images were sourced from [Unsplash](https://unsplash.com/).
+  All images were sourced from [Unsplash](https://unsplash.com/) and [Unsplash](https://unsplash.com/).
 
   The selection of recipe images were chosen to convey variety and colour, to make the recipes appear appetising. When users upload their own recipes they also have the possiblity of adding their own images. If any images are poor quality the website admin can contact the user and provide alternative suggestions if necessary to preserve the quality of the recipe listing UI.
 
