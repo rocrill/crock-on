@@ -202,9 +202,9 @@ White (#fff) was also used in different parts of the site to achieve the best po
 
 ### Imagery
 
-All images were sourced from [Unsplash](https://unsplash.com/) and [Unsplash](https://unsplash.com/).
+All images were sourced from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/).
 
-The selection of recipe images were chosen to convey variety and colour, to make the recipes appear appetising. When users upload their own recipes they also have the possiblity of adding their own images. If any images are poor quality the website admin can contact the user and provide alternative suggestions if necessary to preserve the quality of the recipe listing UI.
+The selection of recipe images were chosen to convey variety and colour to make the recipes appear appetising. When users upload their own recipes they also have the possiblity of adding their own images. If any images are poor quality the website admin can contact the user and provide alternative suggestions if necessary to preserve the quality of the recipe listings.
 
 ------
 
@@ -212,9 +212,11 @@ The selection of recipe images were chosen to convey variety and colour, to make
 
 ## Existing Features
 
-Feature 1. Navigation bar
+**Feature 1. Navigation bar**
 
-  * Navigation bar is always at the top of the page so users know what to expect and can navigate easily.
+  * The navigation bar is always at the top of the page so users know what to expect and can navigate easily.
+
+  * Whatever page is active is highhlighted in a different colour on the nav menu so the user knows what page they are on.
 
   * A border appears at the bottom of the menu links when they are hovered over for responsiveness.
 
@@ -228,19 +230,19 @@ Feature 1. Navigation bar
 
   ![Image of mobile nav menu](static/images/mobile-nav-menu.png)
   
-User stories relating to Navigation bar and footer:
+User stories relating to Navigation bar:
 
   * 1.1 As a user the navigation bar is displayed with a logo on all pages with a search box on a desktop, tablet and mobile.
-  * 1.2 As a user not logged in, I see a Register/Login link in the nav bar. Clicking this leads me to the appropriate registration or sign in pages and enable me to register and sign in,
+  * 1.2 As a user not logged in, I see a Register/Login link in the nav bar. Clicking this leads me to the appropriate registration or sign in pages and enable me to register and sign in.
   * 1.3 As a logged in user, I am notified when I am logged in and I see a logout link in the nav which enables me to click sign out which logs me out.
   * 1.4 As a user I can view the Home link in the header, as well as the website logo, and clicking both will bring me to the homepage.
   * 1.5 As a user I can click the ‘Share Recipe’ nav link which brings me to the recipe posting page where I am able to create a post.
   * 1.6 As a user I can click the ‘Random Recipe’ link which takes me to the page where a new random recipe is displayed each time I visit it.
-  * 1.7 As a user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
+  * 1.7 As a user if I encounter an error on the site, I will be navigated to the applicable error pages.
 
-Feature 2. Home page which contains the recipe list.
+**Feature 2. Home page which contains the recipe list**
 
-  * The recipe list is neat and well-proportioned. Each post clearly states the title, author name and no. of likes and comments received.
+  * The recipe list is neat and well-proportioned. Each post clearly states the title, author name and number of likes and comments received.
   * The home page is paginated so that when more than 6 recipes are published on the site, the second page appears for additional recipes.
 
   Desktop:
@@ -259,18 +261,20 @@ User stories relating to home page.
   * 2.4 As a user and post author, I want to be able to edit or delete a recipe post for which I am the author. 
   * 2.5 As a user if there are more than six recipes on the page, the page is paginated with six recipes per page.
 
-Feature 3. Recipe post detail page
+**Feature 3. Recipe post detail page**
 
-  * This contains a header with the post title, author name and date of posting. Links to edit and delete the post will also appear here if it is the post author logged in. 
-  * Below this is the main image of the recipe and below this is the recipe post itself, which is in the format of an ingrdients list and method. Most users post in this format, however if not, a website admin will re-format the instructions if needed when reviewing the post for quality after it is posted as a draft.
-  * Below the reecipe are user comments and the comment box will also appear here for authenticated logged in users. When a valid user submits a valid comment form, they receive a notification that their comment is awaiting approval. Once this is approved by admin the comment will appear under the post.
+  * This contains a header with the post title, author name and date of posting. Links to edit and delete the post will also appear here if the post author is logged in. 
+  * Below this is the main image of the recipe and below this is the recipe post itself, which is usually displayed in the format of an ingredients and method list. Most users post in this format, however if not, a website admin will re-format the instructions if needed when reviewing the post for quality after it is posted as a draft.
+  * Below the recipe are user comments and the comment box will also appear here for authenticated logged in users. When a valid user submits a valid comment form, they receive a notification that their comment is awaiting approval. Once this is approved by admin the comment will appear under the post.
   * There is also a number of comments and number of likes displayed on the post detail page. 
 
   Desktop:
+  
   ![Image of desktop post detail page 1](static/images/post-detail1.png)
   ![Image of desktop post detail page 2](static/images/post-detail2.png)
 
   Mobile:
+
   ![Image of desktop post detail page 1](static/images/detail-m1.png)
   ![Image of desktop post detail page 2](static/images/detail-m2.png)
 
