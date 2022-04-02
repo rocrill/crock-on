@@ -82,7 +82,7 @@ In total the site has 8 pages:
 
  * About page
 
- * Random recipe generator page
+ * Random recipe page
 
  * Share recipe page
 
@@ -121,7 +121,7 @@ For consistency of user experience, the site logo, navigation links and footer r
   * The User model contains information about the user. It is part of the Django allauth library.
   * The model contains the following fields: username, password, first_name, last_name, email, is_staff, is_active, is_superuser, last_login, date_joined.
 
-The rest of the models were created automatically as part of a basic Django blog project. Their fields and relationships to the above models are illustrated in the above diagram. 
+The rest of the models were created automatically as part of a basic Django blog project. Their fields and relationships to the above models are illustrated in the above diagram.
 
 ## Scope
 
@@ -237,13 +237,13 @@ The selection of recipe images were chosen to convey variety and colour to make 
   
 User stories relating to Navigation bar:
 
-  * 1.1 As a user the navigation bar is displayed with a logo on all pages with a search box on a desktop, tablet and mobile.
+  * 1.1 As a user, I see the navigation bar with a logo on all pages and with a search box on a desktop, tablet and mobile.
   * 1.2 As a user not logged in, I see a Register/Login link in the nav bar. Clicking this leads me to the appropriate registration or sign in pages and enable me to register and sign in.
   * 1.3 As a logged in user, I am notified when I am logged in and I see a logout link in the nav which enables me to click sign out which logs me out.
   * 1.4 As a user I can view the Home link in the header, as well as the website logo, and clicking both will bring me to the homepage.
   * 1.5 As a user I can click the ‘Share Recipe’ nav link which brings me to the recipe posting page where I am able to create a post.
   * 1.6 As a user I can click the ‘Random Recipe’ link which takes me to the page where a new random recipe is displayed each time I visit it.
-  * 1.7 As a user if I encounter an error on the site, I will be navigated to the applicable error pages.
+  * 1.7 As a user if I encounter an error on the site, an applicable error message will be shown.
 
 **Feature 2. Home page which contains the recipe list**
 
@@ -261,7 +261,7 @@ User stories relating to Navigation bar:
 User stories relating to home page.
 
   * 2.1 As a user, I want to see a list of recipes with visually appealing images, listing clear titles and the post authors. 
-  * 2.2 As a returning user, I want to see the newest recipes displayed in date order with the most recent postings first on the page:
+  * 2.2 As a returning user, I want to see the newest recipes displayed in date order with the most recent postings first on the page.
   * 2.3 As a user, I want to see the number of comments and number of likes displayed on each recipe card on the post detail page, so that I have an idea of the popularity and engagement of a post when deciding which ones to look at.  
   * 2.4 As a user and post author, I want to be able to edit or delete a recipe post for which I am the author. 
   * 2.5 As a user if there are more than six recipes on the page, the page is paginated with six recipes per page.
@@ -292,7 +292,7 @@ User stories relating to recipe post detail page:
   
 **Feature 4. Random Recipe page**
 
-  * The random recipe page is a page which generates a new random recipe each time the user visits it. It contains the recipe card as displayed on the home page, containing the recipe image, title, author name, number of likes and comments and posting date.
+  * The random recipe page is a page which selects and displays a random recipe each time the user visits it. It contains the recipe card as displayed on the home page, containing the recipe image, title, author name, number of likes and comments and posting date.
 
 Desktop:
 
@@ -343,7 +343,7 @@ User stories relating to the footer:
 
   * The share recipe page is minimal and straightforward, with the form located in the centre of the page.
   * The recipe posting form has the option for the user to attach their own recipe image, along with a title, unique slug and recipe content.
-  * Django Summernote enables the user to format their recipe post, e.g. be adding bullet points or bold headings when creating their content.
+  * Django Summernote enables the user to format their recipe post, e.g. by adding bullet points or bold headings when creating their content.
 
 Desktop:
 
@@ -398,10 +398,10 @@ User stories relating to Admin:
 
   * 9.1 As an admin user, I can view all user draft posts in date order so that all posts can be reviewed for quality and appropriateness.
   * 9.2 As an admin user, I can edit and publish all user draft posts so that all posts can be reviewed for quality and appropriateness. 
-  * 9.3 As an admin user, I can view and approve all user comments so that all commets can be reviewed for appropriateness.
-  * 9.4 As an admin user, I can view all comments in date order, along with the name of the recipe post that they correspond to and the username of the commenter, so that I can easily view an organised list of comments.
+  * 9.3 As an admin user, I can view and approve all user comments so that all comments can be reviewed for appropriateness.
+  * 9.4 As an admin user, I can view all comments in date order, along with the name of the recipe post that they correspond to and the username of the commenter, so that I can easily view an organise list of comments.
   * 9.5 As an admin user, I filter all posts by status and time of creation so that I can easily filter to view the posts that I need to access.
-  * 9.6 As an admin user I can delete posts so that I can remove old/unpublished posts form the database.
+  * 9.6 As an admin user I can delete posts so that I can remove old/unpublished posts from the database.
   * 9.7 As an admin user I can create a new post via the admin page so that I can post directly to the site without having to access the frontend.
 
 ## Features To be Implemented in Future
@@ -409,7 +409,7 @@ User stories relating to Admin:
 * Rating feature: This will be added to the post detail page so that users can rate posts out of five stars.
 * Category tags: A feature will be introduced which allows users to add category tags to their posts e.g. vegetarian or vegan so users can search recipes by these categories.
 * Paginate comments feature: This will be implemented in future on the post detail page so that when a large number of comments builds up they will be paginated.
-* Forgottwn password feature: This will be introduced so that users can reset their password themselves from teh front-end of teh site.
+* Forgotten password feature: This will be introduced so that users can reset their password themselves from the front-end of the site.
 
 # Technologies Used
 
@@ -423,24 +423,24 @@ User stories relating to Admin:
 
     Python was used for the project's server side coding, in addition to a number of libraries. This is the list as per the requirements.txt file:
 
-    asgiref==3.5.0
-    dj-database-url==0.5.0 
-    cloudinary==1.28.1
-    dj3-cloudinary-storage==0.0.6
-    Django==3.2 (Web framework)
-    django-allauth==0.48.0 
-    django-crispy-forms==1.14.0
-    django-summernote==0.8.20.0
-    django-autoslug==1.9.8
-    django-extensions==3.1.5
-    gunicorn==20.1.0 
-    oauthlib==3.2.0
-    psycopg2==2.9.3
-    PyJWT==2.3.0
-    python3-openid==3.2.0 
-    pytz==2021.3
-    requests-oauthlib==1.3.1
-    sqlparse==0.4.2 
+        asgiref==3.5.0
+        dj-database-url==0.5.0 
+        cloudinary==1.28.1
+        dj3-cloudinary-storage==0.0.6
+        Django==3.2 (Web framework)
+        django-allauth==0.48.0 
+        django-crispy-forms==1.14.0
+        django-summernote==0.8.20.0
+        django-autoslug==1.9.8
+        django-extensions==3.1.5
+        gunicorn==20.1.0 
+        oauthlib==3.2.0
+        psycopg2==2.9.3
+        PyJWT==2.3.0
+        python3-openid==3.2.0 
+        pytz==2021.3
+        requests-oauthlib==1.3.1
+        sqlparse==0.4.2 
 
 ## Frameworks, libraries and programs used:
 
@@ -460,7 +460,7 @@ User stories relating to Admin:
 * [Pexels](https://pexels.com/) - for images.
 * [Bootstrap](https://getbootstrap.com/docs/5.0) - for UI components across the website, e.g. buttons, navbar, cards.
 * [Postgres](https://www.postgresql.org/) - the deployed project on Heroku uses a Postgres database.
-* [SQL lite](https://www.sqlite.org/index.html) - The database used in local development was a SQLLite database.
+* [SQLlite](https://www.sqlite.org/index.html) - The database used in local development was a SQLLite database.
 
 # Deployment
 
@@ -472,21 +472,27 @@ This site has been deployed on Heroku. The link is: https://crock-on.herokuapp.c
 
 * Select 'create new app' under 'new'. Name the app and select a location.
 * Under the Heroku Resources tab, search the database, e.g. Heroku Postgres, and add it to Resources.
-* Navigate to the settings tab of Heroku, click reveal Convig Vars and copy the DATABASE_URL value. 
+* Navigate to the settings tab of Heroku, click reveal Config Vars and copy the DATABASE_URL value. 
 
 2. Attach the database:
 
-* To attach the database, in Gitpod, create a new env.py file on the top level directory.
+* To attach the database, in Gitpod, create a new env.py file at the top level directory.
 * In env.py, import os library and set environment variables:
+```
   os.environ["DATABASE_URL"] = "Paste in Heroku DATABASE_URL Link"
+```
 * Then add in a secret key:
+```
   os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
+```
 * In Heroku.com, add the Secret Key to your Config Vars:
+```
   SECRET_KEY, “randomSecretKey”
+```
 
 3. Prepare environment and settings.py file:
 
-* Update the settings.py file to import the env.py file. Add the SECRETKEY and DATABASE_URL file paths.
+* Update the settings.py file to import the env.py file. Add the SECRET_KEY and DATABASE_URL file paths.
 * Save all files and make migrations in the terminal with `python3 manage.py migrate`.
 
 4. Get static and media files stored on Cloudinary:
@@ -510,7 +516,7 @@ In Gitpod:
 
 * Create 3 new folders on the top level directory: media, static and templates.
 * Create a Procfile on the top level directory. 
-* Add 'web: gunicorn project-name.wsgi' to the Procfile.
+* Add `web: gunicorn project-name.wsgi` to the Procfile.
 * Go to the Deploy tab on Heroku and connect to GitHub, then to the required repository. Click on Deploy Branch and wait for the build to load. When the build is complete, the app can be opened through Heroku.
 
 ## Forking the Repository
@@ -531,7 +537,10 @@ You can clone your repository to create a local copy on your computer. Any chang
 * Select the repository rocrill/crock-on. In the repository, click on Code button located above all the project files.
 * Under HTTPS, copy the link generated - https://github.com/rocrill/crock-on. Open the terminal you are using, e.g. Gitpod.
 * Change the current working directory to the location where you want the cloned directory created.
-* Type git clone and then paste the URL you copied earlier: git clone https://github.com/rocrill/crock-on. Press Enter to create your local clone.
+* Type git clone and then paste the URL you copied earlier followed by Enter to create your local clone:
+```
+git clone https://github.com/rocrill/crock-on
+```
 
 # Testing
 
@@ -590,7 +599,7 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
   The color scheme, design and images were chosen to create an attractive site that will interest users in searching through the recipes and site pages. 
 
-  * As a site owner, I want maintain a safe and secure site where only registered users can share content and comment on other's posts, and where all posts are monitored for quality, and comments for inappropriate content.
+  * As a site owner, I want to maintain a safe and secure site where only registered users can share content and comment on other's posts, and where all posts are monitored for quality, and comments for inappropriate content.
 
   Result: Pass
 
@@ -625,7 +634,7 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
   * 1.3 As a logged in user, I am notified when I am logged in and I see a logout link in the nav which enables me to click 'sign out' which logs me out.
 
-    (i)![Desktop](static/images/sign-in-msg-logout.png)
+    (i)![Desktop](static/images/logout-1.png)
     (ii)![Desktop](static/images/signout-page.png)
     (iii)![Desktop](static/images/signout-msg.png)
 
@@ -762,7 +771,7 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
     (ii)
     
-    ![Desktop](static/images/randomerecipe-2.png)
+    ![Desktop](static/images/randomrecipe-2.png)
 
     Result: Pass
 
@@ -868,7 +877,7 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
     Result: Pass
 
-  * 9.6 As an admin user I can delete posts so that I can remove old/unpublished posts form the database.
+  * 9.6 As an admin user I can delete posts so that I can remove old/unpublished posts from the database.
 
     ![Desktop](static/images/admin-deleteposts.png)
     ![Desktop](static/images/admin-deleteposts2.png)
@@ -952,7 +961,7 @@ Post detail page:
 * Devices and browsers :
 
   * The Website was tested on multiple browsers - Google Chrome, Safari, Microsoft Edge and Firefox browsers.
-  * The website was viewed on all devices available to me - Desktop, Laptop, iPhone6, Huawei Y6 and Oppo Find X2 Lite.
+  * The website was viewed on all devices available to me - Desktop, Laptop, iPhone6, and Oppo Find X2 Lite.
 
 * Site Features:
 
@@ -966,12 +975,12 @@ Post detail page:
 * Fixed:
 
   * Search feature: This was originally case sensitive, e.g. if a recipe was entitled 'Egg's Benedict', it would not appear in search results if a user searched 'egg' instead of 'Egg'. This was fixed by using `icontains` in the search view instead of `contains`.
-  * The Random Recipe page was originally generating draft posts as random recipes as well as published posts. To address this, a filter was added to the `search_recipes` view so that only posts with published status would be shown in results.
-  * The Random recipe page having a min of 3 posts for the random recipe feature to generate a recipe, otherwise user informed taht they have 
+  * The Random Recipe page was originally showing draft posts as random recipes as well as published posts. To address this, a filter was added to the `search_recipes` view so that only posts with published status would be shown in results.
+  * The Random recipe page having a minimum of 3 posts for the random recipe feature to work - the user is now informed if there are not enough recipes on the site for the random recipe feature to work and are encouraged to contribute. 
   * Initially, when posts were created the user was directed to a 'success url' which contained a confirmation message that their post was submitted. However this message would remain everytime the user navigated back to the home page after posting. To address this, the method of redirecting to a success url after posting was replaced with adding a `messages.success` function call into the view `add_recipe` view. 
   * Comment feature: Originally, when a user comment was submitted for approval, it came through to admin with the email field blank. In order for the admin user to approve the comment, they needed to input the users email address which was not autopopulated in the form. To address this, the Comment model was updated with `email = models.EmailField(blank=True)` so that the email was not required to be input by admin in order to approve the comment.
   * At first, when viewing the 'Share Recipe' page on mobile view, the Summernote text editing box exceeded the width of the mobile screen view which didn't look good on mobile devices. To fix this Django Summernote configuration settings were added to the Settings.py file to specify the width so that the editor suits all screen sizes.
-  * Originally, users could find a way to edit delete other other posts by typing in the edit and delete page urls for other authors' posts. To fix this, the edit and delete recipe views were updated so that when a non-author typed in the address to reach the edit post or delete post page of another author, they are redirected to the home page and a message is displayed to advise that they are not authorised to access that functionality.
+  * Originally, users could find a way to edit and delete other posts by typing in the edit and delete page urls for other authors' posts. To fix this, the edit and delete recipe views were updated so that when a non-author typed in the address to reach the edit post or delete post page of another author, they are redirected to the home page and an error message is displayed to advise that they are not authorised to access that functionality.
   
 * Known:
   * On the Post Detail page the no. of likes and comments icons do not adjust neatly when the screen is reduced to a mobile view. This would be corrected in future development of the site.
