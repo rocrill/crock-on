@@ -841,7 +841,7 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
     (ii)
     
-    ![Desktop](static/images/signout-confirmation.png)
+    ![Desktop](static/images/signout-confirmation-message.png)
 
      Result: Pass
 
@@ -862,16 +862,16 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
   * 9.3 As an admin user, I can view and approve all user comments so that all comments can be reviewed for appropriateness.
 
-   ![Desktop](static/images/admin-comment1.png)
-   ![Desktop](static/images/admin-comment2.png)
+    ![Desktop](static/images/admin-comment1.png)
+    ![Desktop](static/images/admin-comment2.png)
 
-   Result: Pass
+    Result: Pass
 
   * 9.4 As an admin user, I can view all comments in date order, along with the name of the recipe post that they correspond to and the username of the commenter, so that I can easily view an organised list of comments.
 
-   ![Desktop](static/images/comment-list.png)
+    ![Desktop](static/images/comment-list.png)
 
-   Result: Pass
+    Result: Pass
 
   * 9.5 As an admin user, I can filter all posts by status and time of creation so that I can easily filter to view the posts that I need to access.
 
