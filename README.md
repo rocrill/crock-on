@@ -10,6 +10,7 @@ Crock-on is a recipe sharing blog website. It aims to provide users with easy re
 
 - [Crock-on Recipe Bog](#crock-on-recipe-bog)
   * [Introduction](#introduction)
+- [Table of Contents](#table-of-contents)
 - [User Experience (UX)](#user-experience--ux-)
   * [Strategy](#strategy)
     + [Project Goals](#project-goals)
@@ -17,25 +18,29 @@ Crock-on is a recipe sharing blog website. It aims to provide users with easy re
     + [Site Owner's Goals](#site-owner-s-goals)
     + [Target Audience](#target-audience)
   * [Structure](#structure)
-    + [Website pages:](#website-pages-)
+    + [Website pages](#website-pages)
     + [Database](#database)
   * [Scope](#scope)
-  * [Skeleton:](#skeleton-)
+  * [Skeleton](#skeleton)
     + [Wireframes](#wireframes)
   * [Surface](#surface)
-    + [Design:](#design-)
-  * [Features](#features)
-    + [Existing Features:](#existing-features-)
-    + [Features To be Implemented in Future:](#features-to-be-implemented-in-future-)
-  * [Technologies Used](#technologies-used)
-    + [Languages:](#languages-)
-    + [Frameworks, libraries and programs used:](#frameworks--libraries-and-programs-used-)
+    + [Colour Scheme](#colour-scheme)
+    + [Typography](#typography)
+    + [Imagery](#imagery)
+- [Features](#features)
+  * [Existing Features](#existing-features)
+  * [Features To be Implemented in Future](#features-to-be-implemented-in-future)
+- [Technologies Used](#technologies-used)
+  * [Languages:](#languages-)
+  * [Frameworks, libraries and programs used:](#frameworks--libraries-and-programs-used-)
 - [Deployment](#deployment)
   * [Deployment on Heroku](#deployment-on-heroku)
   * [Forking the Repository](#forking-the-repository)
   * [Making a local clone](#making-a-local-clone)
 - [Testing](#testing)
   * [Testing User Stories](#testing-user-stories)
+    + [General User Stories](#general-user-stories)
+    + [Feature User Story Testing](#feature-user-story-testing)
   * [Validator Testing](#validator-testing)
   * [Lighthouse Testing](#lighthouse-testing)
   * [Further Testing](#further-testing)
@@ -269,7 +274,7 @@ User stories relating to home page.
   * There is also a number of comments and number of likes displayed on the post detail page. 
 
   Desktop:
-  
+
   ![Image of desktop post detail page 1](static/images/post-detail1.png)
   ![Image of desktop post detail page 2](static/images/post-detail2.png)
 
@@ -280,105 +285,105 @@ User stories relating to home page.
 
 User stories relating to recipe post detail page:
 
-  * 3.1 I want to be able to edit or delete a recipe post for which I am the author.
-  * 3.2 As a user, I want to be able to comment on a recipe post
-  * 3.3 As a user, I want to be able to like and unlike a recipe post.
-  * 3.4 As a user who has not registered or logged into the website, I cannot add a comment to a recipe post.
+  * 3.1 I want to be able to edit or delete a recipe post for which I am the author so that I have a level of control over my content.
+  * 3.2 As a user, I want to be able to comment on a recipe post so that I can engage with blog posts.
+  * 3.3 As a user, I want to be able to like and unlike a recipe post so that I can engage with blog posts and support other authors.
+  * 3.4 As a user who has not registered or logged into the website, I cannot add a comment to a recipe post so that the site is secure.
   
-Feature 4. Random Recipe page
+**Feature 4. Random Recipe page**
 
   * The random recipe page is a page which generates a new random recipe each time the user visits it. It contains the recipe card as displayed on the home page, containing the recipe image, title, author name, number of likes and comments and posting date.
 
-  Desktop:
+Desktop:
 
-  ![Image of the desktop random page](static/images/randomrecipe-1.png)
-  ![Image of the desktop random page 2](static/images/randomrecipe-2.png)
+![Image of the desktop random page](static/images/randomrecipe-1.png)
+![Image of the desktop random page 2](static/images/randomrecipe-2.png)
 
-  Mobile: 
+Mobile: 
 
-  ![Image of the mobile random page](static/images/randomrecipe-mobile.png)
+![Image of the mobile random page](static/images/randomrecipe-mobile.png)
 
 User stories relating to recipe Random Recipe page:
 
-  * 4.1 As a user, I want quick and easy inspiration for cooking ideas without browsing through a large number of recipes.
+  * 4.1 As a user, I want the option of quick and easy inspiration for cooking ideas without browsing through a large number of recipes.
 
-Feature 5. About page
+**Feature 5. About page**
 
   * This seciton provides a brief background of the blog, its purpose and a welcoming message for website users.
   
-  Desktop:
+Desktop:
 
-  ![Image of the About page](static/images/about-page.png)
+![Image of the About page](static/images/about-page.png)
 
-  Mobile:
+Mobile:
 
-  ![Image of the mobile About page](static/images/aboutpage-mobile.png)
+![Image of the mobile About page](static/images/aboutpage-mobile2.png)
 
 User stories relating to the About page:
 
-  * 5.1 As a user I can read about the background to and idea behind the website so that I understand the website style and purpose.
+  * 5.1 As a user I can read about the background of and idea behind the website so that I understand the website purpose and style.
 
-Feature 6. Footer
+**Feature 6. Footer**
 
-  * Footer is conventionally placed at the bottom of the site and consistently displayed on all pages.
+  * The footer is conventionally placed at the bottom of the site and consistently displayed on all pages.
 
   * It includes centered social media links which open in new tabs. 
 
   * The aim is for a clean and minimalist look for the footer.
 
-  Desktop: 
+Desktop: 
 
- ![Image of the footer](static/images/footer.png)
+![Image of the footer](static/images/footer.png)
 
-  User stories relating to the footer:
+User stories relating to the footer:
 
-  * 6.1 As a user, I can access the blog site's social media pages which open in new tabs so that I can stay updated on blog news and updates.
+* 6.1 As a user, I can access the blog site's social media pages which open in new tabs so that I can stay updated on blog news and updates.
 
-Feature 7. Share Recipe page
+**Feature 7. Share Recipe page**
 
-  * This is minimal, with the form located in the centre of the page.
+  * The share recipe page is minimal and straightforward, with the form located in the centre of the page.
   * The recipe posting form has the option for the user to attach their own recipe image, along with a title, unique slug and recipe content.
   * Django Summernote enables the user to format their recipe post, e.g. be adding bullet points or bold headings when creating their content.
 
-  Desktop:
+Desktop:
 
-  ![Image of desktop Recipe post page](static/images/recipepost-desktop.png)
+![Image of desktop Recipe post page](static/images/recipepost-desktop.png)
 
-  Mobile:
+Mobile:
 
-  ![Image of mobile Recipe post page](static/images/recipepost-mobile.png)
+![Image of mobile Recipe post page](static/images/sharerecipe-mobile.png)
 
 User stories relating to the Share Recipe page:
 
  * 7.1 As a user, I can create a recipe post from the front end of the site so that I can easily post a recipe without having to access the back-end of the site.
 
-Feature 8. Register/Log in and Log out pages:
+**Feature 8. Register/Log in and Log out pages**
 
   * These three pages have a similar layout. Each function is located in the centre of the page.
   * There is user validation when filling out the forms and upon signing out the user is asked if they are sure they would like to do so.
   * Registration, signing in and logging out all result in a confirmation message of the action completed to the user.
 
-  Desktop:
+Desktop:
 
-  ![Image of Desktop Login](static/images/.png)
-  ![Image of Desktop Loout](static/images/.png)
-  ![Image of Desktop Register](static/images/.png)
+![Image of Desktop Login](static/images/desktop-login.png)
+![Image of Desktop Logout](static/images/signout-desktop-logout.png)
+![Image of Desktop Register](static/images/desktop-register.png)
 
-  Mobile:
+Mobile:
 
-  ![Image of Mobile Login](static/images/.png)
-  ![Image of Mobile Loout](static/images/.png)
-  ![Image of Mobile Register](static/images/.png)
+![Image of Mobile Login](static/images/mobile-login.png)
+![Image of Mobile Logout](static/images/mobile-logout.png)
+![Image of Mobile Register](static/images/mobile-register.png)
 
- User stories relating to Register/Log in and Log out pages:
+User stories relating to Register/Log in and Log out pages:
 
-  * 8.1 As a user I can log in to the site via the log in page so that I can use the site and all features available to an authenticated user:
-  * 8.2 As a first time user I can register and sign up to the site via the register page so that I can use the site and all features available to an authenticated user:
+  * 8.1 As a returning user I can log in to the site via the log in page so that I can use the site and all features available to an authenticated user.
+  * 8.2 As a first time user I can register and sign up to the site via the register page so that I can use the site and all features available to an authenticated user.
   * 8.3 As a user I can log out of the site when logged in so that I can securely end my session on the site.
 
-Feature 9. Admin
+**Feature 9. Admin**
 
-  * A number of Admin views are configured at https://crock-on.herokuapp.com/admin, through which the below user stories can be carried out. Full CRUD operations to the data in the database are available as well as search and filter options. These include a Users lists, Posts and Comments.
+  * A number of Admin views are configured at https://crock-on.herokuapp.com/admin, through which the below user stories can be carried out. Full CRUD operations to the data in the database are available as well as search and filter options. These include Users, Posts and Comments sections.
 
   Users:
   ![Image of admin user list](static/images/admin-users.png)
@@ -401,10 +406,10 @@ User stories relating to Admin:
 
 ## Features To be Implemented in Future
 
-* Recipe list page: 
-* Recipe detail page: Rating feature
-* Tag posts with categories e.g. vegetarian vegan so user can search by these terms.
-* Paginate comments
+* Rating feature: This will be added to the post detail page so that users can rate posts out of five stars.
+* Category tags: A feature will be introduced which allows users to add category tags to their posts e.g. vegetarian or vegan so users can search recipes by these categories.
+* Paginate comments feature: This will be implemented in future on the post detail page so that when a large number of comments builds up they will be paginated.
+* Forgottwn password feature: This will be introduced so that users can reset their password themselves from teh front-end of teh site.
 
 # Technologies Used
 
@@ -413,33 +418,35 @@ User stories relating to Admin:
 *  [HTML 5](https://en.wikipedia.org/wiki/HTML5)
 *  [CSS 3](https://en.wikipedia.org/wiki/CSS)
 *  [Javascript](https://www.javascript.com/)
-*  [Django]((https://www.djangoproject.com/)
+*  [Django](https://www.djangoproject.com/)
 *  [Python](https://www.python.org/)
 
-Python was used for the project's server side coding, in addition to a number of libraries. This is the list as per the requirements.txt file:
-asgiref==3.5.0
-dj-database-url==0.5.0 (Support for DATABASE_URL environment variable)
-cloudinary==1.28.1
-dj3-cloudinary-storage==0.0.6
-Django==3.2 (Web framework)
-django-allauth==0.48.0 (Web framework authentication)
-django-crispy-forms==1.14.0 (Django rendering of forms)
-django-summernote==0.8.20.0
-django-autoslug==1.9.8
-gunicorn==20.1.0 (Python WSGI Http server)
-oauthlib==3.2.0 (Framework for oauth1 and oauth2)
-psycopg2==2.9.3
-PyJWT==2.3.0
-python3-openid==3.2.0 (Support for the OpenID decentralized identity system)
-pytz==2021.3
-requests-oauthlib==1.3.1 (Authentication support for Requests)
-sqlparse==0.4.2 (Non-validating SQL parser for Python)
+    Python was used for the project's server side coding, in addition to a number of libraries. This is the list as per the requirements.txt file:
+
+    asgiref==3.5.0
+    dj-database-url==0.5.0 
+    cloudinary==1.28.1
+    dj3-cloudinary-storage==0.0.6
+    Django==3.2 (Web framework)
+    django-allauth==0.48.0 
+    django-crispy-forms==1.14.0
+    django-summernote==0.8.20.0
+    django-autoslug==1.9.8
+    django-extensions==3.1.5
+    gunicorn==20.1.0 
+    oauthlib==3.2.0
+    psycopg2==2.9.3
+    PyJWT==2.3.0
+    python3-openid==3.2.0 
+    pytz==2021.3
+    requests-oauthlib==1.3.1
+    sqlparse==0.4.2 
 
 ## Frameworks, libraries and programs used:
 
 * [Balsamiq](https://balsamiq.com/) - to create wireframes for the site as part of the project preparation.
-* [Google Fonts](https://fonts.google.com/) - to import the 'Kaisei HarunoUmi' and 'Sans Serif' fonts into the HTML file, which were then used throughout the site.
-* [Font Awesome](https://fontawesome.com/) - for icons which were added to some headings throughout the site for aesthetics.
+* [Google Fonts](https://fonts.google.com/) - to import the 'Bungee Shade' and 'Roboto Slab' fonts into the HTML file, which were then used throughout the site.
+* [Font Awesome](https://fontawesome.com/) - for icons which were added to the footer.
 * [Coolors](https://coolors.co/) - for an appropriate and attractive colour palette.
 * [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - to inspect and debug the code through all stages of the development.
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse) - to check the site for performance, accessibility and best practices.
@@ -450,9 +457,10 @@ sqlparse==0.4.2 (Non-validating SQL parser for Python)
 * [Gitpod](https://gitpod.io/account) - to write the code and push it to GitHub.
 * [Github Pages](https://pages.github.com/) - to deploy the site.
 * [Unsplash](https://unsplash.com/) - for images.
-* [Bootstrap]
-* [Postgres]
-* [SQL lite]
+* [Pexels](https://pexels.com/) - for images.
+* [Bootstrap](https://getbootstrap.com/docs/5.0) - for UI components across the website, e.g. buttons, navbar, cards.
+* [Postgres](https://www.postgresql.org/) - the deployed project on Heroku uses a Postgres database.
+* [SQL lite](https://www.sqlite.org/index.html) - The database used in local development was a SQLLite database.
 
 # Deployment
 
@@ -535,6 +543,8 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
 ## Testing User Stories 
 
+### General User Stories
+
 * First Time Visitor Goals
 
   * As a First Time Visitor, I want to easily understand the main purpose of the site.
@@ -558,7 +568,7 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
   Recipes are located on the home page and the 'Share Recipe' page is clearly named in the nav bar for logged in users who wish to share content.
 
-  * As a Returning Visitor, I also want to locate the business's social media links to keep up to date with blog news and announcements.
+  * As a Returning Visitor, I also want to locate the website owner's social media links to keep up to date with blog news and announcements.
 
   Result: Pass
 
@@ -570,7 +580,7 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
   Result: Pass
 
-  The site is fully responsive and optimised for mobile as well as dektop devices.
+  The site is fully responsive and optimised for mobile, tablet and dektop devices.
 
 * Site Owner Goals
 
@@ -592,9 +602,9 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
   These are clearly located in the website footer.
 
-Feature User Story testing:
+### Feature User Story Testing
 
-1. Navigation bar and footer:
+**1. Navigation bar and footer**
 
   * 1.1 As a user the navigation bar is displayed with a logo on all pages with a search box on a desktop and mobile.
 
@@ -613,7 +623,7 @@ Feature User Story testing:
 
     Result: Pass 
 
-  * 1.3 As a logged in user, I am notified when I am logged in and I see a logout link in the nav which enables me to click sign out which logs me out.
+  * 1.3 As a logged in user, I am notified when I am logged in and I see a logout link in the nav which enables me to click 'sign out' which logs me out.
 
     (i)![Desktop](static/images/sign-in-msg-logout.png)
     (ii)![Desktop](static/images/signout-page.png)
@@ -643,13 +653,27 @@ Feature User Story testing:
 
    Result: Pass
 
-  * 1.7 As a user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
+  * 1.7 As a user if I encounter an error on the site, I will be navigated to the applicable error pages:
   
-        To do
+   (i) If a non-author user attempts to edit a post:
+
+   ![non-author edit](static/images/non-author-edit.png)
+
+   (ii) If a non-author user attempts to delete a post:
+
+   ![non-author delete](static/images/non-author-delete.png)
+
+   (iii) If an unfound page is searched:
+
+   ![page not found](static/images/page-notfound.png)
+
+   (iv) If an unfound string is searched in the search box:
+
+   ![no search results](static/images/nosearch-results.png)
 
    Result: Pass
 
-2. Home page which contains the recipe list.
+**2. Home page which contains the recipe list.**
 
   * 2.1 As a user, I want to see a list of recipes with visually appealing images, listing clear titles and the post authors. 
 
@@ -665,7 +689,7 @@ Feature User Story testing:
 
   * 2.3 As a user, I want to see the number of comments and number of likes displayed on each recipe card on the post detail page, so that I have an idea of the popularity and engagement of a post when deciding which ones to look at.  
 
-    ![Desktop](static/images/date-time.png)
+    ![Desktop](static/images/number-comments-likes.png)
 
     Result: Pass
 
@@ -682,45 +706,67 @@ Feature User Story testing:
 
     Result: Pass
 
-3. Recipe post detail page.
+**3. Recipe post detail page**
 
-  * 3.1 I want to be able to edit or delete a recipe post for which I am the author.
+  * 3.1 I want to be able to edit or delete a recipe post for which I am the author so that I have a level of control over my content.
 
-    (i)![Desktop](static/images/postdetail-edit.png)
-    (ii)![Desktop](static/images/edit-page.png)
+    (i)
+    
+    ![Desktop](static/images/postdetail-edit.png)
 
-    Result: Pass
-
-  * 3.2 As a user, I want to be able to comment on a recipe post
-
-    (i)![Desktop](static/images/leave-comment.png)
-    (ii)![Desktop](static/images/await-approval.png)
+    (ii)
+    
+    ![Desktop](static/images/edit-page.png)
 
     Result: Pass
 
-  * 3.3 As a user, I want to be able to like and unlike a recipe post.
+  * 3.2 As a user, I want to be able to comment on a recipe post so that I can engage with blog posts.
 
-    (i)![Desktop](static/images/like-post.png)
+    (i)
+
+    ![Desktop](static/images/leave-comment.png)
+
+    (ii)
+
+    ![Desktop](static/images/await-approval.png)
 
     Result: Pass
 
-  * 3.4 As a user who has not registered or logged into the website, I cannot add a comment to a recipe post.
+  * 3.3 As a user, I want to be able to like and unlike a recipe post so that I can engage with blog posts and support other authors.
 
-    (i)![Desktop](static/images/user-notsignedin.png)
-    (ii)![Desktop](static/images/no-commentbox.png)
+    (i)
+    
+    ![Desktop](static/images/like-post.png)
 
     Result: Pass
 
-4. Random Recipe page
+  * 3.4 As a user who has not registered or logged into the website, I cannot add a comment to a recipe post so that the site is secure.
+
+    (i)
+    
+    ![Desktop](static/images/user-notsignedin.png)
+
+    (ii)
+    
+    ![Desktop](static/images/no-commentbox.png)
+
+    Result: Pass
+
+**4. Random Recipe page**
 
   * 4.1 As a user, I want quick and easy inspiration for cooking ideas without browsing through a large number of recipes.
 
-    (i)![Desktop](static/images/randomrecipe-1.png)
-    (ii)![Desktop](static/images/randomerecipe-2.png)
+    (i)
+
+    ![Desktop](static/images/randomrecipe-1.png)
+
+    (ii)
+    
+    ![Desktop](static/images/randomerecipe-2.png)
 
     Result: Pass
 
-5. About page
+**5. About page**
 
   * 5.1 As a user I can read about the background to and idea behind the website so that I understand the website style and purpose.
 
@@ -740,8 +786,13 @@ Feature User Story testing:
 
   * 7.1 As a user, I can create a recipe post from the front end of the site so that I can easily post a recipe without having to access the back-end of the site.
 
-    (ii)![Desktop](static/images/post-page.png)
-    (iii)![Desktop](static/images/post-conf.png)
+    (ii)
+    
+    ![Desktop](static/images/post-page.png)
+
+    (iii)
+    
+    ![Desktop](static/images/post-conf.png)
 
     Result: Pass
 
@@ -749,22 +800,37 @@ Feature User Story testing:
 
   * 8.1 As a user I can log in to the site via the log in page so that I can use the site and all features available to an authenticated user:
 
-    (i)![Desktop](static/images/login-page.png)
-    (ii)![Desktop](static/images/register-3.png)
+    (i)
+
+    ![Desktop](static/images/login-page.png)
+
+    (ii)
+
+    ![Desktop](static/images/register-3.png)
 
     Result: Pass 
 
   * 8.2 As a first time user I can register and sign up to the site via the register page so that I can use the site and all features available to an authenticated user:
 
-   (i)![Desktop](static/images/register-2.png)
-   (ii)![Desktop](static/images/register-3.png)
+   (i)
+   
+   ![Desktop](static/images/register-2.png)
+
+   (ii)
+   
+   ![Desktop](static/images/register-3.png)
 
    Result: Pass
 
   * 8.3 As a user I can log out of the site when logged in so that I can securely end my session on the site.
 
-    (i)![Desktop](static/images/signout-page.png)
-    (ii)![Desktop](static/images/signout-confirmation.png)
+    (i)
+
+    ![Desktop](static/images/signout-page.png)
+
+    (ii)
+    
+    ![Desktop](static/images/signout-confirmation.png)
 
      Result: Pass
 
@@ -783,7 +849,7 @@ Feature User Story testing:
 
     Result: Pass
 
-  * 9.3 As an admin user, I can view and approve all user comments so that all commets can be reviewed for appropriateness.
+  * 9.3 As an admin user, I can view and approve all user comments so that all comments can be reviewed for appropriateness.
 
    ![Desktop](static/images/admin-comment1.png)
    ![Desktop](static/images/admin-comment2.png)
@@ -796,7 +862,7 @@ Feature User Story testing:
 
     Result: Pass
 
-  * 9.5 As an admin user, I filter all posts by status and time of creation so that I can easily filter to view the posts that I need to access.
+  * 9.5 As an admin user, I can filter all posts by status and time of creation so that I can easily filter to view the posts that I need to access.
 
     ![Desktop](static/images/admin-filterposts.png)
 
@@ -852,23 +918,33 @@ The source code for each website page was also run through the HTML validator se
 The Lighthouse report from Google Chrome DevTools showed good results for performance and accessibility of the site, particularly on desktop devices.
 
 Home page: 
+
 ![Desktop](static/images/lhouse-home-desktop.png)
+
 ![Mobile](static/images/lhouse-home-mobile.png)
 
 About page:
+
 ![Desktop](static/images/lhouse-about-desktop.png)
+
 ![Mobile](static/images/lhouse-about-mobile.png)
 
 Share recipe page:
+
 ![Desktop](static/images/lhouse-share-desktop.png)
+
 ![Mobile](static/images/lhouse-share-mobile.png)
 
 Random Recipe page:
+
 ![Desktop](static/images/lhouse-random-desktop.png)
+
 ![Mobile](static/images/lhouse-random-mobile.png)
 
 Post detail page:
+
 ![Desktop](static/images/lhouse-detail-desktop.png)
+
 ![Mobile](static/images/lhouse-detail-mobile.png)
 
 ## Further Testing
@@ -894,8 +970,8 @@ Post detail page:
   * The Random recipe page having a min of 3 posts for the random recipe feature to generate a recipe, otherwise user informed taht they have 
   * Initially, when posts were created the user was directed to a 'success url' which contained a confirmation message that their post was submitted. However this message would remain everytime the user navigated back to the home page after posting. To address this, the method of redirecting to a success url after posting was replaced with adding a `messages.success` function call into the view `add_recipe` view. 
   * Comment feature: Originally, when a user comment was submitted for approval, it came through to admin with the email field blank. In order for the admin user to approve the comment, they needed to input the users email address which was not autopopulated in the form. To address this, the Comment model was updated with `email = models.EmailField(blank=True)` so that the email was not required to be input by admin in order to approve the comment.
-  * At first, when viewing the 'Share Recipe' page on mobile view, the Summernote text editing box exceeded the width of the mobile screen view which didn't look good on mobile devices. To fix this Django Summernote configuration settings were added to the Settings.py file to specify the width so tha the editor suits all screen sizes.
-  * Users could find a way to edit delete other other posts. To fixt his...
+  * At first, when viewing the 'Share Recipe' page on mobile view, the Summernote text editing box exceeded the width of the mobile screen view which didn't look good on mobile devices. To fix this Django Summernote configuration settings were added to the Settings.py file to specify the width so that the editor suits all screen sizes.
+  * Originally, users could find a way to edit delete other other posts by typing in the edit and delete page urls for other authors' posts. To fix this, the edit and delete recipe views were updated so that when a non-author typed in the address to reach the edit post or delete post page of another author, they are redirected to the home page and a message is displayed to advise that they are not authorised to access that functionality.
   
 * Known:
   * On the Post Detail page the no. of likes and comments icons do not adjust neatly when the screen is reduced to a mobile view. This would be corrected in future development of the site.
