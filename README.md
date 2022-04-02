@@ -2,7 +2,7 @@
 
 ## Introduction
 
-![Image of Device responsiveness](static/images/responsive_firstdraft.png)
+![Image of Device responsiveness](static/images/responsive-final.png)
 
 Crock-on is a recipe sharing blog website. It aims to provide users with easy recipe ideas that their fellow amateur cooks have shared. It aims to be accessible to every level of cook, and also to serve as a place where people can share their own recipes and interact with other cook's recipes without having to go through the motions of setting up their own cookery blog. 
 
@@ -71,7 +71,7 @@ Crock-on is a recipe sharing blog website. It aims to provide users with easy re
 
 ### Website pages
 
-The site has 4 pages: 
+In total the site has 8 pages: 
 
  * Home page
 
@@ -129,7 +129,7 @@ The rest of the models were created automatically as part of a basic Django blog
 * Returning Visitor Goals
 
   * As a Returning Visitor, I want to easily access recipes and share content.
-  * As a Returning Visitor, I also want to locate the business's social media links to stay up to date with announcements and news.
+  * As a Returning Visitor, I also want to locate the website owner's social media links to stay up to date with announcements and news.
   
 * Frequent User Goals
 
@@ -138,14 +138,14 @@ The rest of the models were created automatically as part of a basic Django blog
 * Site Owner Goals
 
   * As a site owner, I want to create an attractive and well-designed site that elicits a positive emotional response in users so that they remain on and navigate througout the site to achieve their goals.
-  * As a site owner, I want maintain a safe and secure site where only registered users can share content and comment on other's posts, and where all posts are monitored for quality, and comments for inappropriate content.
+  * As a site owner, I want to maintain a safe and secure site where only registered users can share content and comment on other's posts, and where all posts are monitored for quality, and comments for inappropriate content.
   *  As a site owner, I want to have clear social media links displayed on the site which may lead to an increased following on channels to help with my blog's visibility.
 
 More specific user stories are discussed in the context of website features in the Features section below.
 
 Note: Throughout the project, this [Kanban board](https://github.com/rocrill/crock-on/projects/1) was used to organise and track the progress of the user story development, however the final user stories are documented fully within this Readme. 
 
-## Skeleton:
+## Skeleton
 
 ### Wireframes
 
@@ -158,7 +158,7 @@ Desktop:
 - [Wireframes](docs/wireframes/postdetail-desktop.pdf): Desktop post detail page.
 - [Wireframes](docs/wireframes/randomrecipe-desktop.pdf): Desktop 'Random Recipe' page.
 - [Wireframes](docs/wireframes/sharerecipe-desktop.pdf): Desktop 'Share Recipe' page.
-- [Wireframes](docs/wireframes/searchpage-desktop.pdf): Desktop 'Search' page.
+- [Wireframes](docs/wireframes/desktop-searchresults-final.pdf): Desktop search results page.
 - [Wireframes](docs/wireframes/register-desktop.pdf): Desktop 'Register' page.
 - [Wireframes](docs/wireframes/login-desktop.pdf): Desktop 'Sign in' page.
 - [Wireframes](docs/wireframes/signout-desktop.pdf): Desktop 'Sign out' page.
@@ -170,6 +170,7 @@ Mobile:
 - [Wireframes](docs/wireframes/postdetail-mobile.pdf): Mobile post detail page.
 - [Wireframes](docs/wireframes/randomrecipe-mobile.pdf): Mobile 'Random Recipe' page.
 - [Wireframes](docs/wireframes/sharerecipe-mobile.pdf): Mobile 'Share Recipe' page.
+- [Wireframes](docs/wireframes/mobile-searchresults-final.pdf): Mobile search results page.
 - [Wireframes](docs/wireframes/register-mobile.pdf): Mobile 'Register' page.
 - [Wireframes](docs/wireframes/login-mobile.pdf): Mobile 'Sign in' page.
 - [Wireframes](docs/wireframes/signout-mobile.pdf): Mobile 'Sign out' page.
@@ -179,31 +180,37 @@ Mobile:
 
 ### Colour Scheme
 
-  The colour palette includes fun and complimenting colours. The palette was chosen using the [Coolors](https://coolors.co/) colour generator website.
+The colour palette includes fun and complimenting colours. The palette was chosen using the [Coolors](https://coolors.co/) colour generator website.
 
-  ![Image of Color Palette](static/images/pp4_colours.png)
+![Image of Color Palette](static/images/pp4_colours.png)
 
-  The colours mainly used were:
+The colours mainly used were:
 
+#CA054D - Pictorial Carmine
 
+#3B1C32 - Dark Purple
 
-  White was also used in different parts of the site to achieve the best possible contrast for user experience.
+#FFCF9C - Deep Champagne
+
+#59B176 - Medium Sea Green
+
+White (#fff) was also used in different parts of the site to achieve the best possible contrast for user experience.
 
 ### Typography
 
-  'Bungee Shade and Roboto Slab', taken from Google Fonts, are the main fonts used throughout the website with 'Sans Serif' as the fallback font. The Bungee Shade font is eye-catching and fun, and this is used for the blog logo and recipe titles. The Roboto Slab is clean, neat and more approriate for the smaller text used throughout the site.
+'Bungee Shade and Roboto Slab', taken from Google Fonts, are the main fonts used throughout the website with 'Sans Serif' as the fallback font. The Bungee Shade font is eye-catching and fun, and this is used for the blog logo and recipe titles. The Roboto Slab is clean, neat and more approriate for the smaller text used throughout the site.
 
 ### Imagery
 
-  All images were sourced from [Unsplash](https://unsplash.com/) and [Unsplash](https://unsplash.com/).
+All images were sourced from [Unsplash](https://unsplash.com/) and [Unsplash](https://unsplash.com/).
 
-  The selection of recipe images were chosen to convey variety and colour, to make the recipes appear appetising. When users upload their own recipes they also have the possiblity of adding their own images. If any images are poor quality the website admin can contact the user and provide alternative suggestions if necessary to preserve the quality of the recipe listing UI.
+The selection of recipe images were chosen to convey variety and colour, to make the recipes appear appetising. When users upload their own recipes they also have the possiblity of adding their own images. If any images are poor quality the website admin can contact the user and provide alternative suggestions if necessary to preserve the quality of the recipe listing UI.
 
 ------
 
-## Features
+# Features
 
-### Existing Features:
+## Existing Features
 
 Feature 1. Navigation bar
 
@@ -388,16 +395,16 @@ User stories relating to Admin:
   * 9.6 As an admin user I can delete posts so that I can remove old/unpublished posts form the database.
   * 9.7 As an admin user I can create a new post via the admin page so that I can post directly to the site without having to access the frontend.
 
-### Features To be Implemented in Future:
+## Features To be Implemented in Future
 
 * Recipe list page: 
 * Recipe detail page: Rating feature
 * Tag posts with categories e.g. vegetarian vegan so user can search by these terms.
 * Paginate comments
 
-## Technologies Used
+# Technologies Used
 
-### Languages:
+## Languages:
 
 *  [HTML 5](https://en.wikipedia.org/wiki/HTML5)
 *  [CSS 3](https://en.wikipedia.org/wiki/CSS)
@@ -424,7 +431,7 @@ pytz==2021.3
 requests-oauthlib==1.3.1 (Authentication support for Requests)
 sqlparse==0.4.2 (Non-validating SQL parser for Python)
 
-### Frameworks, libraries and programs used:
+## Frameworks, libraries and programs used:
 
 * [Balsamiq](https://balsamiq.com/) - to create wireframes for the site as part of the project preparation.
 * [Google Fonts](https://fonts.google.com/) - to import the 'Kaisei HarunoUmi' and 'Sans Serif' fonts into the HTML file, which were then used throughout the site.
@@ -880,9 +887,11 @@ Post detail page:
 
   * Search feature: This was originally case sensitive, e.g. if a recipe was entitled 'Egg's Benedict', it would not appear in search results if a user searched 'egg' instead of 'Egg'. This was fixed by using `icontains` in the search view instead of `contains`.
   * The Random Recipe page was originally generating draft posts as random recipes as well as published posts. To address this, a filter was added to the `search_recipes` view so that only posts with published status would be shown in results.
+  * The Random recipe page having a min of 3 posts for the random recipe feature to generate a recipe, otherwise user informed taht they have 
   * Initially, when posts were created the user was directed to a 'success url' which contained a confirmation message that their post was submitted. However this message would remain everytime the user navigated back to the home page after posting. To address this, the method of redirecting to a success url after posting was replaced with adding a `messages.success` function call into the view `add_recipe` view. 
   * Comment feature: Originally, when a user comment was submitted for approval, it came through to admin with the email field blank. In order for the admin user to approve the comment, they needed to input the users email address which was not autopopulated in the form. To address this, the Comment model was updated with `email = models.EmailField(blank=True)` so that the email was not required to be input by admin in order to approve the comment.
   * At first, when viewing the 'Share Recipe' page on mobile view, the Summernote text editing box exceeded the width of the mobile screen view which didn't look good on mobile devices. To fix this Django Summernote configuration settings were added to the Settings.py file to specify the width so tha the editor suits all screen sizes.
+  * Users could find a way to edit delete other other posts. To fixt his...
   
 * Known:
   * On the Post Detail page the no. of likes and comments icons do not adjust neatly when the screen is reduced to a mobile view. This would be corrected in future development of the site.
