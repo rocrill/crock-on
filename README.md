@@ -672,13 +672,15 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
    ![non-author delete](static/images/non-author-delete.png)
 
-   (iii) If an unfound page is searched:
-
-   ![page not found](static/images/page-notfound.png)
-
    (iv) If an unfound string is searched in the search box:
 
    ![no search results](static/images/nosearch-results.png)
+
+   (iii) If an unfound page is searched:
+
+   ![page not found](static/images/page-not-found.png)
+
+   The 500.html template has also been created so that a custom error page will be displayed to the user when a 500 error occurs.
 
    Result: Pass
 

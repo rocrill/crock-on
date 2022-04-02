@@ -33,7 +33,8 @@ def add_recipe(request):
     """View for creating recipe posts."""
 
     if not request.user.is_authenticated:
-        messages.error(request, "You must login before you can share a recipe!")
+        messages.error(request, "You must login before" +
+                                "you can share a recipe!")
         return redirect("/accounts/login/")
 
     form = None
@@ -143,11 +144,13 @@ class PostUpdateView(generic.UpdateView):
 
     def get(self, request, slug, *args, **kwargs):
         if not request.user.is_authenticated:
-            messages.error(request, "You must login before you can edit your recipes!")
+            messages.error(request, "You must login before" +
+                           "you can edit your recipes!")
             return redirect("/accounts/login/")
         post = Post.objects.get(slug=slug)
         if request.user != post.author:
-            messages.error(request, "You are not authorised to edit this post as you are not the author!")
+            messages.error(request, "You are not authorised to edit this" +
+                           "post as you are not the author!")
             return redirect("/")
         return super().get(request, slug, *args, **kwargs)
 
@@ -171,11 +174,13 @@ class PostDeleteView(generic.DeleteView):
 
     def get(self, request, slug, *args, **kwargs):
         if not request.user.is_authenticated:
-            messages.error(request, "You must login before you can delete your recipes!")
+            messages.error(request, "You must login before you can" +
+                           "delete your recipes!")
             return redirect("/accounts/login/")
         post = Post.objects.get(slug=slug)
         if request.user != post.author:
-            messages.error(request, "You are not authorised to delete this post as you are not the author!")
+            messages.error(request, "You are not authorised to delete" +
+                           "this post as you are not the author!")
             return redirect("/")
         msg = f"You have deleted your '{ post.title }' recipe!"
         post.delete()
