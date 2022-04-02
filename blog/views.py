@@ -29,6 +29,11 @@ def search_recipes(request):
 
 def add_recipe(request):
     """View for creating recipe posts."""
+
+    if not request.user.is_authenticated:
+        messages.error(request, "You must login before you can share a recipe!")
+        return redirect("/accounts/login/")
+
     form = None
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES)
@@ -134,6 +139,16 @@ class PostUpdateView(generic.UpdateView):
     form_class = PostForm
     template_name = "update_post.html"
 
+    def get(self, request, slug, *args, **kwargs):
+        if not request.user.is_authenticated:
+            messages.error(request, "You must login before you can edit your recipes!")
+            return redirect("/accounts/login/")
+        post = Post.objects.get(slug=slug)
+        if request.user != post.author:
+            messages.error(request, "You are not authorised to edit this post as you are not the author!")
+            return redirect("/")
+        return super().get(request, slug, *args, **kwargs)
+
     def form_valid(self, form):
         form.instance.author = self.request.user
         form.instance.status = 0
@@ -153,8 +168,14 @@ class PostDeleteView(generic.DeleteView):
     template_name = "delete_post.html"
 
     def get(self, request, slug, *args, **kwargs):
-        post = Post.objects.filter(slug=slug)
-        msg = f"You have deleted your '{ post[0].title }' recipe!"
+        if not request.user.is_authenticated:
+            messages.error(request, "You must login before you can delete your recipes!")
+            return redirect("/accounts/login/")
+        post = Post.objects.get(slug=slug)
+        if request.user != post.author:
+            messages.error(request, "You are not authorised to delete this post as you are not the author!")
+            return redirect("/")
+        msg = f"You have deleted your '{ post.title }' recipe!"
         post.delete()
         messages.success(self.request, msg)
         return HttpResponseRedirect(reverse('home'))
