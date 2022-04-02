@@ -785,7 +785,7 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
     Result: Pass
 
-6. Footer
+**6. Footer**
 
   * 6.1 As a user, I can easily access the blog site's social media pages which open in new tabs so that I can stay updated on blog news and updates.
 
@@ -793,7 +793,7 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
     Result: Pass
 
-7. Share Recipe page
+**7. Share Recipe page**
 
   * 7.1 As a user, I can create a recipe post from the front end of the site so that I can easily post a recipe without having to access the back-end of the site.
 
@@ -807,7 +807,7 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
     Result: Pass
 
-8. Register/Log in and Log out pages:
+**8. Register/Log in and Log out pages**
 
   * 8.1 As a user I can log in to the site via the log in page so that I can use the site and all features available to an authenticated user:
 
@@ -845,7 +845,7 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
 
      Result: Pass
 
-9. Admin
+**9. Admin**
 
   * 9.1 As an admin user, I can view all user draft posts in date order so that all posts can be reviewed for quality and appropriateness.
 
@@ -865,13 +865,13 @@ At the final stages of the project the W3C Markup Validator, W3C CSS Validator S
    ![Desktop](static/images/admin-comment1.png)
    ![Desktop](static/images/admin-comment2.png)
 
-    Result: Pass
+   Result: Pass
 
   * 9.4 As an admin user, I can view all comments in date order, along with the name of the recipe post that they correspond to and the username of the commenter, so that I can easily view an organised list of comments.
 
    ![Desktop](static/images/comment-list.png)
 
-    Result: Pass
+   Result: Pass
 
   * 9.5 As an admin user, I can filter all posts by status and time of creation so that I can easily filter to view the posts that I need to access.
 
@@ -923,6 +923,16 @@ I re-ran the deployed site through both the HTML and CSS validators and no warni
 ![Image for html validator result](static/images/html-validator-result.png)
 
 The source code for each website page was also run through the HTML validator separately and no errors were returned except for those relating to Summernote, as noted above.
+
+## PEP8
+
+All Python files were run through the PEP8 validator and any syntax errors were corrected:
+
+![Image for PEP8 result](static/images/pep8-validation.png)
+
+## JSHint
+
+![Image for JSHint result](static/images/js-validation.png)
 
 ## Lighthouse Testing
 
