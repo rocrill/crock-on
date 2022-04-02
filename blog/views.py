@@ -15,16 +15,18 @@ def search_recipes(request):
     """View for searching recipe posts for specific keywords."""
     if request.method == "POST":
         searched = request.POST['searched']
-        recipes = Post.objects.filter(
+        if not searched:
+            return redirect("/")
+        post_list = Post.objects.filter(
             Q(content__icontains=searched) |
             Q(title__icontains=searched) |
             Q(author__username__icontains=searched)).filter(status=1)
 
-        return render(request, 'search_recipes.html',
+        return render(request, 'index.html',
                       {'searched': searched,
-                       'recipes': recipes})
+                       'post_list': post_list})
     else:
-        return render(request, 'search_recipes.html', {})
+        return render(request, 'index.html', {})
 
 
 def add_recipe(request):

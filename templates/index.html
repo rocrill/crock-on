@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-
 <div class="container-fluid">
     <div class="row-home overflow-hidden">
 
@@ -14,6 +13,22 @@
                         <input class="form-control me-2" type="search" placeholder="Search recipes, authors or ingredients" aria-label="Search" name="searched" style="width: 600px;">
                         <button class="btn btn-outline-success search_button" type="submit">Search</button>
                 </form>
+                <!-- Searched string. -->
+                <div>
+                    {% if searched %}
+                        <br/>
+                        {% if post_list|length < 1 %}
+                        <div class="heading-font">
+                            <h1>No results for '{{ searched }}' :(</h1>
+                        </div>
+                        {% else%}
+                        <div class="heading-font">
+                            <h1>You searched for '{{ searched }}':</h1>
+                        </div>
+                        <br/>
+                        {% endif %}
+                    {% endif %}
+                </div>
                 
 
                 {% for post in post_list %}
