@@ -6,6 +6,47 @@
 
 Crock-on is a recipe sharing blog website. It aims to provide users with easy recipe ideas that their fellow amateur cooks have shared. It aims to be accessible to every level of cook, and also to serve as a place where people can share their own recipes and interact with other cook's recipes without having to go through the motions of setting up their own cookery blog. 
 
+# Table of Contents 
+
+- [Crock-on Recipe Bog](#crock-on-recipe-bog)
+  * [Introduction](#introduction)
+- [User Experience (UX)](#user-experience--ux-)
+  * [Strategy](#strategy)
+    + [Project Goals](#project-goals)
+    + [User Goals](#user-goals)
+    + [Site Owner's Goals](#site-owner-s-goals)
+    + [Target Audience](#target-audience)
+  * [Structure](#structure)
+    + [Website pages:](#website-pages-)
+    + [Database](#database)
+  * [Scope](#scope)
+  * [Skeleton:](#skeleton-)
+    + [Wireframes](#wireframes)
+  * [Surface](#surface)
+    + [Design:](#design-)
+  * [Features](#features)
+    + [Existing Features:](#existing-features-)
+    + [Features To be Implemented in Future:](#features-to-be-implemented-in-future-)
+  * [Technologies Used](#technologies-used)
+    + [Languages:](#languages-)
+    + [Frameworks, libraries and programs used:](#frameworks--libraries-and-programs-used-)
+- [Deployment](#deployment)
+  * [Deployment on Heroku](#deployment-on-heroku)
+  * [Forking the Repository](#forking-the-repository)
+  * [Making a local clone](#making-a-local-clone)
+- [Testing](#testing)
+  * [Testing User Stories](#testing-user-stories)
+  * [Validator Testing](#validator-testing)
+  * [Lighthouse Testing](#lighthouse-testing)
+  * [Further Testing](#further-testing)
+  * [Bugs](#bugs)
+- [Credits](#credits)
+  * [Code](#code)
+  * [Images](#images)
+- [Acknowledgements](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 # User Experience (UX)
 
 ## Strategy
@@ -24,7 +65,7 @@ Crock-on is a recipe sharing blog website. It aims to provide users with easy re
 
 ### Target Audience
 
-* Cooks who want to share their recipe ideas without having to commit to their own personal cookery blog, and anyone looking for recipe ideas that are accessible as they have been created by other amateur cooks.
+* Cooks who want to share their recipe ideas without having to commit to their own personal cooking blog, and anyone looking for recipe ideas that are accessible as they have been created by other amateur cooks.
 
 ## Structure
 
@@ -40,6 +81,8 @@ The site has 4 pages:
 
  * Share recipe page
 
+ * Search results page
+
  * Log in/out and register pages
 
 For consistency of user experience, the site logo, navigation links and footer remain consitent throughout the site.
@@ -50,7 +93,7 @@ For consistency of user experience, the site logo, navigation links and footer r
 * The backend was created using Python, built within the Django framework and uses the Postgres database for the deployed Heroku version.
 * A SQLLite database was used for local development.
 
-**Physical database model**
+**Physical database model** 
 
 ![Database](static/images/pp4-datamodel-png.png)
 
@@ -99,6 +142,8 @@ The rest of the models were created automatically as part of a basic Django blog
   *  As a site owner, I want to have clear social media links displayed on the site which may lead to an increased following on channels to help with my blog's visibility.
 
 More specific user stories are discussed in the context of website features in the Features section below.
+
+Note: Throughout the project, [Kanban board](https://github.com/rocrill/crock-on/projects/1) was used to organise and track the progress of the user story development, however the final user stories are documented fully within this Readme. 
 
 ## Skeleton:
 
