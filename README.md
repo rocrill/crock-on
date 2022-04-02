@@ -366,7 +366,7 @@ User stories relating to the Share Recipe page:
 Desktop:
 
 ![Image of Desktop Login](static/images/desktop-login.png)
-![Image of Desktop Logout](static/images/signout-desktop-logout.png)
+![Image of Desktop Logout](static/images/logout-page.png)
 ![Image of Desktop Register](static/images/desktop-register.png)
 
 Mobile:
