@@ -932,6 +932,8 @@ All Python files were run through the PEP8 validator and any syntax errors were 
 
 ## JSHint
 
+All Javascript was run through the JSHint validator and no errors were returned:
+
 ![Image for JSHint result](static/images/js-validation.png)
 
 ## Lighthouse Testing
